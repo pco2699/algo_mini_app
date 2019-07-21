@@ -2,10 +2,13 @@ PREDEF:
   - chap00-preface.re
 
 CHAPS:
-  - chap01-starter.re
-  - chap02-faq.re
+  - chap01-search.re
+  - chap02-sort.re
+  - chap03-heap.re
+  - chap04-dfs.re
+  - chap05-dp.re
 
 APPENDIX:
 
 POSTDEF:
-  - chap99-postscript.re
+  - chap99-afterword.re
