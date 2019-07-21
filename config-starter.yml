@@ -1,0 +1,71 @@
+# coding: utf-8
+
+## Starter独自設定
+starter:
+
+  ## 出力のターゲット。環境変数 $STARTER_TARGET で上書き可能。
+  ## * pbook: 印刷用のモノクロPDFを出力。printing bookの略。
+  ## * ebook: 電子用のカラーPDFを出力。electric bookの略。
+  ## * tablet: タブレット用のカラーPDFを出力。
+  target: pbook
+
+  ## ドラフトモード。trueなら画像を読み込むかわりに枠を表示する。
+  ## 図やスクリーンショットが多くてコンパイルに時間がかかるときに便利。
+  draft: false
+
+  ## 章 (Chapter) タイトルの装飾
+  ## （none: なし、underline: 下線、boldlines: 上下に太線）
+  chapter_decoration: none
+
+  ## 章 (Chapter) タイトルの左寄せ/右寄せ/中央揃え
+  ## （left: 左寄せ、right: 右寄せ、center: 中央揃え）
+  chapter_align: left
+
+  ## 章 (Chapter) タイトルを1行にする（章番号とタイトルとの間で改行しない）
+  chapter_oneline: true
+
+  ## 節 (Section) ごとに改ページするか
+  ## （ただし各章の最初の節は改ページしない）
+  section_newpage: true
+
+  ## ページ先頭なら節や項のタイトルの前にスペースを入れない
+  section_notopmargin: true
+
+  ## 節 (Section) タイトルの装飾
+  ## （none: なし、underline: 下線、grayback: 灰色の背景色）
+  section_decoration: underline
+
+  ## 項 (Subsection) タイトルの装飾
+  ## （none: なし、symbol: 先頭にクローバー）
+  subsection_decoration: none
+
+  ## プログラムやターミナルのキャプションを小さくするか？
+  caption_small: true
+
+  ## キャプションの見映えをよくするか？
+  caption_pretty: true
+
+  ## プログラム（//list）のフォントサイズ
+  program_fontsize: small  # 'normal' or 'small'
+
+  ## ターミナル（//cmd, //terminal）のフォントサイズ
+  terminal_fontsize: small  # 'normal' or 'small'
+
+  ## プログラム用（//list）の等幅フォント。
+  ##  * lmodern … LaTeXのデフォルト。1とl、0とOが見分けにくい。太字が目立たない。
+  ##  * lmodern-lighttt … lmodernを細字にしたもの。太字が目立つ。
+  ##  * courier … 文字が細いので太字が目立つ。1とl、0とOが見分けにくい。文字幅が広い。
+  ##  * beramono … 1とl、0とOが見分けやすい。「'」と「`」が見分けにくい。
+  ##  * inconsolata … 1とl、0とOが見分けやすい。文字幅が少し狭い。
+  ##  * inconsolata-narrow … inconsolataの文字幅をさらに狭めたもの。英数字と日本語の文字幅が約1:2。
+  program_ttfont: beramono
+
+  ## ターミナル用（//terminal、//cmd）の等幅フォント。
+  ## 使用できるフォント名はプログラム用と同じ。
+  ## ただしinconsolataとinconsolata-narrow、lmodernとlmodern-lightttは互いに排他的。
+  ## たとえばプログラム用でinconsolataを使いつつターミナル用でinconsolata-narrowを
+  ## 使う、といったことはできない（どちらもinconsolata-narrowになる）。
+  terminal_ttfont: inconsolata
+
+  ## 奥付 (Colophon) に「powered by Re:VIEW Starter」と入れるか？
+  colophon_poweredby: true
