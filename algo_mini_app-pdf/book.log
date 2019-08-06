@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2018.8.9)  21 JUL 2019 11:54
+This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2018.8.9)  4 AUG 2019 10:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1088,105 +1088,44 @@ Package pagecolor Warning: Option pagecolor=none (maybe by default) used,
 (pagecolor)                will be used now
 (pagecolor)                 on input line 127.
 
-)) (./mycolophon.sty) (./book.aux
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `image:chap01-starter:tw-icon' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-)
+)) (./mycolophon.sty) (./book.aux)
 \openout1 = `book.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 247.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 247.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 249.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 249.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 247.
-LaTeX Font Info:    ... okay on input line 247.
-LaTeX Font Info:    Checking defaults for LBM/cmr/m/n on input line 247.
-LaTeX Font Info:    Try loading font information for LBM+cmr on input line 247.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for LBM/cmr/m/n on input line 249.
+LaTeX Font Info:    Try loading font information for LBM+cmr on input line 249.
 
 (/usr/share/texlive/texmf-dist/tex/latex/boisik/lbmcmr.fd
 File: lbmcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    ... okay on input line 249.
 (I search kanjifont definition file: . . ) (I search font definition file: . . 
 . . . . . . )
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 247.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 249.
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1196,7 +1135,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring ON on input line 247.
+Package hyperref Info: Link coloring ON on input line 249.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1204,9 +1143,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count140
 )
-LaTeX Info: Redefining \ref on input line 247.
-LaTeX Info: Redefining \pageref on input line 247.
-LaTeX Info: Redefining \nameref on input line 247.
+LaTeX Info: Redefining \ref on input line 249.
+LaTeX Info: Redefining \pageref on input line 249.
+LaTeX Info: Redefining \nameref on input line 249.
 (./book.out) (./book.out)
 \@outlinefile=\write4
 \openout4 = `book.out'.
@@ -1239,7 +1178,7 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                of loading the ``hyperref'' package.
 
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM book.toc on input line 247.
+(minitoc)             PREPARING MINITOCS FROM book.toc on input line 249.
 Package minitoc Info: I0033
 (minitoc)             Writing book.mtc1.
 \openout3 = `book.mtc1'.
@@ -1256,53 +1195,65 @@ Package minitoc Info: I0033
 (minitoc)             Writing book.mtc4.
 \openout3 = `book.mtc4'.
 
+Package minitoc Info: I0033
+(minitoc)             Writing book.mtc5.
+\openout3 = `book.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing book.mtc6.
+\openout3 = `book.mtc6'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing book.mtc7.
+\openout3 = `book.mtc7'.
+
 LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 263.
+(Font)              scaled to size 9.24683pt on input line 267.
 LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 263.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 263.
+(Font)              scaled to size 9.24683pt on input line 267.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 267.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 27.74048pt on input line 263.
+(Font)              scaled to size 27.74048pt on input line 267.
 LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 27.74048pt on input line 263.
+(Font)              scaled to size 27.74048pt on input line 267.
 LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
-(Font)              scaled to size 27.74048pt on input line 263.
+(Font)              scaled to size 27.74048pt on input line 267.
 LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
-(Font)              scaled to size 27.74048pt on input line 263.
+(Font)              scaled to size 27.74048pt on input line 267.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <30> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 263.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 267.
 LaTeX Font Info:    Font shape `JT2/hgt/eb/n' will be
-(Font)              scaled to size 27.74048pt on input line 263.
+(Font)              scaled to size 27.74048pt on input line 267.
 LaTeX Font Info:    Font shape `JY2/hgt/eb/n' will be
-(Font)              scaled to size 27.74048pt on input line 263.
+(Font)              scaled to size 27.74048pt on input line 267.
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 263.
+(Font)              scaled to size 15.9785pt on input line 267.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 263.
+(Font)              scaled to size 15.9785pt on input line 267.
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 263.
+(Font)              scaled to size 13.31541pt on input line 267.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 263.
+(Font)              scaled to size 13.31541pt on input line 267.
 [1
 
 
 ]
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 285.
+(Font)              scaled to size 8.32214pt on input line 291.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 285.
+(Font)              scaled to size 8.32214pt on input line 291.
 LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 285.
+(Font)              scaled to size 8.32214pt on input line 291.
 LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 285.
+(Font)              scaled to size 8.32214pt on input line 291.
 LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
-(Font)              scaled to size 8.32214pt on input line 285.
+(Font)              scaled to size 8.32214pt on input line 291.
 LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
-(Font)              scaled to size 8.32214pt on input line 285.
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 285.
+(Font)              scaled to size 8.32214pt on input line 291.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 291.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1321,97 +1272,71 @@ LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
 (Font)              scaled to size 23.0061pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JT2/hmc/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 5.
-LaTeX Font Info:    Font shape `JY2/hmc/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 5.
+LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 4.
+LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 4.
 LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 5.
+(Font)              scaled to size 13.31541pt on input line 4.
 LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 5.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 5.
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 12.
-(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
-)
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 12.
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 26.
-(/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 26.
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-[]\T1/fvm/m/n/9 1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][
-]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]7[][
-]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]
-2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]
-7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1
-[][]2[]
- []
-
+(Font)              scaled to size 13.31541pt on input line 4.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `JT2/hmc/bx/n' will be
+(Font)              scaled to size 9.24683pt on input line 18.
+LaTeX Font Info:    Font shape `JY2/hmc/bx/n' will be
+(Font)              scaled to size 9.24683pt on input line 18.
 [1
 
 
-]) [2] (./book.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 3.
+])
+LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
+(Font)              scaled to size 9.24683pt on input line 306.
+LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
+(Font)              scaled to size 9.24683pt on input line 306.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 306.
+[2] (./book.toc
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 2.
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 3.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 2.
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 3.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 2.
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 3.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 2.
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 3.
+(Font)              <10> on input line 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 3.
+(Font)              <7> on input line 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 3.
+(Font)              <5> on input line 2.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 3.
+(Font)              scaled to size 6.47278pt on input line 2.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 3.
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+(Font)              scaled to size 4.62341pt on input line 2.
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3
 
-]
-LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 44.
-LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 44.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 49.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 49.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 49.
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 49.
-[4])
+])
 \tf@toc=\write5
 \openout5 = `book.toc'.
 
-[5] [6
-
-] (./chap01-starter.tex
+[4] (./chap01-install.tex
 第1章
 LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
 (Font)              scaled to size 15.9785pt on input line 1.
@@ -1419,496 +1344,80 @@ LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
 (Font)              scaled to size 15.9785pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+File: ./images/architecture.png Graphic file (type bmp)
+<./images/architecture.png>
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 5.
+(Font)              scaled to size 11.09619pt on input line 21.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              scaled to size 11.09619pt on input line 21.
 LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 5.
+(Font)              scaled to size 11.09619pt on input line 21.
 LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 5.
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 5.
-LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 7.
-LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 7.
-LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 11.
-LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 11.
+(Font)              scaled to size 11.09619pt on input line 21.
 LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
-(Font)              scaled to size 13.31541pt on input line 11.
+(Font)              scaled to size 11.09619pt on input line 21.
 LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
-(Font)              scaled to size 13.31541pt on input line 11.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 11.
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 15.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 15.
-LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 15.
-LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 15.
-LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
-(Font)              scaled to size 11.09619pt on input line 15.
-LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
-(Font)              scaled to size 11.09619pt on input line 15.
+(Font)              scaled to size 11.09619pt on input line 21.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 20.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 21.
 [1
 
+
 ]
-LaTeX Font Info:    Try loading font information for TS1+fvm on input line 47.
-(/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fvm.fd
-File: ts1fvm.fd 2004/09/07 scalable font definitions for TS1/fvm.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 44.
+(/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
-LaTeX Font Info:    Font shape `TS1/fvm/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 47.
-LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <9> not available
-(Font)              Font shape `T1/fvm/b/n' tried instead on input line 54.
-LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
-(Font)              scaled to size 8.09995pt on input line 54.
-LaTeX Font Info:    Font shape `TS1/fvm/bx/n' in size <9> not available
-(Font)              Font shape `TS1/fvm/b/n' tried instead on input line 54.
-LaTeX Font Info:    Font shape `TS1/fvm/b/n' will be
-(Font)              scaled to size 8.09995pt on input line 54.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 54.
-LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <12> not available
-(Font)              Font shape `T1/fvm/b/n' tried instead on input line 57.
-LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 57.
-[2] [3] [4] [5] [6]
-LaTeX Font Info:    Font shape `JT2/hmc/bx/n' will be
-(Font)              scaled to size 11.09619pt on input line 331.
-LaTeX Font Info:    Font shape `JY2/hmc/bx/n' will be
-(Font)              scaled to size 11.09619pt on input line 331.
-LaTeX Font Info:    Font shape `JT2/hmc/bx/n' will be
-(Font)              scaled to size 8.32214pt on input line 342.
-LaTeX Font Info:    Font shape `JY2/hmc/bx/n' will be
-(Font)              scaled to size 8.32214pt on input line 342.
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 347.
-[7]
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 384.
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 44.
+[2]) (./chap02-search.tex [3
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
-) [8]
-LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <10> not available
-(Font)              Font shape `T1/fvm/b/n' tried instead on input line 445.
-LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 445.
+] [4
 
-LaTeX Font Warning: Font shape `JT2/hgt/bx/it' undefined
-(Font)              using `JT2/hgt/bx/n' instead on input line 445.
-
-
-LaTeX Font Warning: Font shape `JY2/hgt/bx/it' undefined
-(Font)              using `JY2/hgt/bx/n' instead on input line 445.
-
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 445.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 445.
-LaTeX Font Info:    Font shape `JT2/hgt/bx/it' will be
-(Font)              scaled to size 9.24683pt on input line 445.
-LaTeX Font Info:    Font shape `JY2/hgt/bx/it' will be
-(Font)              scaled to size 9.24683pt on input line 445.
-[9] [10] [11]
-
-LaTeX Font Warning: Font shape `JT2/hmc/m/it' undefined
-(Font)              using `JT2/hmc/m/n' instead on input line 559.
-
-
-LaTeX Font Warning: Font shape `JY2/hmc/m/it' undefined
-(Font)              using `JY2/hmc/m/n' instead on input line 559.
-
-LaTeX Font Info:    Font shape `JT2/hmc/m/it' will be
-(Font)              scaled to size 9.24683pt on input line 561.
-LaTeX Font Info:    Font shape `JY2/hmc/m/it' will be
-(Font)              scaled to size 9.24683pt on input line 561.
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 645--645
-[][][]\T1/fvm/m/n/9 1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]
-2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]
-7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1
-[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6
-[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][
-][]1[][]2[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 645--645
-[][][]\T1/fvm/m/n/9 f[][]o[][]o[][]/[][]b[][]a[][]r[][]/[][]b[][]a[][]z[][]/[][
-]t[][]e[][]s[][]t[][]p[][]r[][]o[][]g[][].[][]r[][]b[][]:[][]1[][]1[][]:[][]i[]
-[]n[][] [][]\TS1/fvm/m/n/9 `[][]\T1/fvm/m/n/9 f[][]u[][]n[][]c[][]1[][]\TS1/fvm
-/m/n/9 '[][]\T1/fvm/m/n/9 :[][] [][]u[][]n[][]d[][]e[][]f[][]i[][]n[][]e[][]d[]
-[] [][]l[][]o[][]c[][]a[][]l[][] [][]v[][]a[][]r[][]i[][]a[][]b[][]l[][]e[][] [
-][]o[][]r[][] [][]m[][]e[][]t[][]h[][]o[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 654--654
-[][][]\T1/fvm/m/n/9 1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]
-2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]
-7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1
-[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6
-[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][
-][]1[][]2[]
- []
-
-[14]
-LaTeX Font Info:    Try loading font information for TS1+zi4 on input line 658.
-
-(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/ts1zi4.fd
-File: ts1zi4.fd 2018/01/14 TS1/zi4 (Inconsolata)
-)
-LaTeX Font Info:    Font shape `TS1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 658.
-
-Underfull \hbox (badness 10000) in paragraph at lines 658--658
-[][][]\T1/zi4/m/n/9 f[][]o[][]o[][]/[][]b[][]a[][]r[][]/[][]b[][]a[][]z[][]/[][
-]t[][]e[][]s[][]t[][]p[][]r[][]o[][]g[][].[][]r[][]b[][]:[][]1[][]1[][]:[][]i[]
-[]n[][] [][]\TS1/zi4/m/n/9 `[][]\T1/zi4/m/n/9 f[][]u[][]n[][]c[][]1[][]\TS1/zi4
-/m/n/9 '[][]\T1/zi4/m/n/9 :[][] [][]u[][]n[][]d[][]e[][]f[][]i[][]n[][]e[][]d[]
-[] [][]l[][]o[][]c[][]a[][]l[][] [][]v[][]a[][]r[][]i[][]a[][]b[][]l[][]e[][] [
-][]o[][]r[][] [][]m[][]e[][]t[][]h[][]o[][]d[][] [][]\TS1/zi4/m/n/9 `[][]\T1/zi
-4/m/n/9 a[][]a[][]a[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 691--691
-[][][] [][] [][]\T1/fvm/m/n/9 a[][]b[][]o[][]r[][]t[][] [][]\TS1/fvm/m/n/9 '[][
-]\JY2/hgt/m/n/9 深[][]刻[][]な[][]エ[][]ラ[][]ー[][]が[][]発[][]生[][]
-し[][]ま[][]し[][]た[][]。 [][]今[][]す[][]ぐ[][]シ[][]ス[][]テ[][]
-ム[][]管[][]理[][]者[][]に[][]連[][]絡[][]し[][]て[][]、
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-[][][] [][] [][]\T1/fvm/m/n/9 a[][]b[][]o[][]r[][]t[][] [][]\TS1/fvm/m/n/9 '[][
-]\JY2/hgt/m/n/9 深[][]刻[][]な[][]エ[][]ラ[][]ー[][]が[][]発[][]生[][]
-し[][]ま[][]し[][]た[][]。 [][]今[][]す[][]ぐ[][]シ[][]ス[][]テ[][]
-ム[][]管[][]理[][]者[][]に[][]連[][]絡[][]し[][]て[][]、
- []
-
-[16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
-[][][]\T1/fvm/m/n/9 1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]
-2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]
-7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1
-[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6
-[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][
-][]1[][]2[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-[][] \T1/fvm/m/n/9 2:[] 1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1
-[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6
-[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][
-][]1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[
-][]6[][]7[][]8[][]9[][]_[][][][]1[][]2[][]3[][]4[][]5[][]6[][]7[][]8[]
- []
-
-[18] [19] [20]
-File: ./images/chap01-starter/caption_pagebreak.png Graphic file (type bmp)
-<./images/chap01-starter/caption_pagebreak.png>
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 956--958
-[]\JY2/hmc/m/it/10 変換はスクリプト \T1/phv/m/n/10 lib/hooks/beforetexc
-ompile.rb \JY2/hmc/m/it/10 が行います 。
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 956--958
-\JY2/hmc/m/it/10 設定フ ァイルである \T1/phv/m/n/10 con-fig.yml \JY2/h
-mc/m/it/10 に 「\T1/fvm/m/n/10 hook_beforetexcompile:
- []
-
-[22] [23]
-File: ./images/chap01-starter/figure_heretop.png Graphic file (type bmp)
-<./images/chap01-starter/figure_heretop.png>
-[24] [25]
-File: ./images/chap01-starter/tw-icon.jpg Graphic file (type bmp)
-<./images/chap01-starter/tw-icon.jpg>
-File: ./images/chap01-starter/tw-icon.jpg Graphic file (type bmp)
-<./images/chap01-starter/tw-icon.jpg>
-[26] [27] [28] [29]
-LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 1255.
-LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 1255.
-
-Underfull \hbox (badness 3930) in paragraph at lines 1277--1279
-[]\JY2/hmc/m/it/10 しかし項 \T1/lmr/m/n/10 (Sub-sec-tion) \JY2/hmc/m/it/10 
-には番号がついていないので 、 たとえば
- []
-
-[30] [31]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 1353.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\k@family' on input line 1353.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 1353.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\k@family' on input line 1353.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 1353.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\k@family' on input line 1353.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 1353.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\k@family' on input line 1353.
-
-[32] [33]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 1408.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\k@family' on input line 1408.
-
-File: ./images/chap01-starter/slide2.png Graphic file (type bmp)
-<./images/chap01-starter/slide2.png>
-[34
-
-] [35] [36]
-File: ./images/chap01-starter/margin_book.png Graphic file (type bmp)
-<./images/chap01-starter/margin_book.png>
-[37]
-File: ./images/chap01-starter/font_beramono.png Graphic file (type bmp)
-<./images/chap01-starter/font_beramono.png>
-[38]
-File: ./images/chap01-starter/chaphead_design_3.png Graphic file (type bmp)
-<./images/chap01-starter/chaphead_design_3.png>
-File: ./images/chap01-starter/chaphead_design_2.png Graphic file (type bmp)
-<./images/chap01-starter/chaphead_design_2.png>
-[39]
-File: ./images/chap01-starter/chaptitlepage_sample.png Graphic file (type bmp)
-<./images/chap01-starter/chaptitlepage_sample.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 1599--1601
-[]\JY2/hmc/m/it/10 やり方は簡単で 、 章タイトルと概要を書い
-たあとに
- []
-
-[40]
-Underfull \hbox (badness 1184) in paragraph at lines 1630--1632
-[]\JY2/hmc/m/it/10 目次のデザインを修正する場合は 、 \T1/phv/m/
-n/10 sty/starter.sty \JY2/hmc/m/it/10 の中で 「\T1/phv/m/n/10 \l@section\JY
-2/hmc/m/it/10 」 や
- []
-
-[41] [42]
-File: ./images/chap01-starter/column_openframe.png Graphic file (type bmp)
-<./images/chap01-starter/column_openframe.png>
-[43] [44]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 1787.
-[45
-
-] [46]
-Underfull \hbox (badness 1412) in paragraph at lines 1855--1856
-[]\JY2/hmc/m/it/10 ただしこの機能では 、 \T1/lmr/m/n/10 L[]T[]X \JY2/
-hmc/m/it/10 のスタイルフ ァイル （\T1/fvm/m/n/10 sty/starter.sty \JY2
-/hmc/m/it/10 や
- []
-
-[47]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 1910.
-LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
-(Font)              scaled to size 7.39746pt on input line 1910.
-LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
-(Font)              scaled to size 7.39746pt on input line 1910.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 1910.
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 1965--1965
-[][][]\T1/zi4/m/n/9 [[][]r[][]e[][]v[][]i[][]e[][]w[][]-[][]p[][]d[][]f[][]m[][
-]a[][]k[][]e[][]r[][]][][]$[][][][] [][]/[][]u[][]s[][]r[][]/[][]b[][]i[][]n[][
-]/[][]r[][]u[][]b[][]y[][] [][]/[][]t[][]m[][]p[][]/[][]x[][]x[][]x[][]-[][]b[]
-[]o[][]o[][]k[][]/[][]l[][]i[][]b[][]/[][]h[][]o[][]o[][]k[][]s[][]/[][]b[][]e[
-][]f[][]o[][]r[][]e[][]t[][]e[][]x[][]c[][]o[][]m[][]p[][]i[][]l[][]e[][].[][]r
-[][]b[][] [][]/[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1965--1965
-[][][]\T1/zi4/m/n/9 [[][]r[][]e[][]v[][]i[][]e[][]w[][]-[][]p[][]d[][]f[][]m[][
-]a[][]k[][]e[][]r[][]][][]$[][][][] [][]u[][]p[][]l[][]a[][]t[][]e[][]x[][] [][
-]-[][]h[][]a[][]l[][]t[][]-[][]o[][]n[][]-[][]e[][]r[][]r[][]o[][]r[][] [][]-[]
-[]f[][]i[][]l[][]e[][]-[][]l[][]i[][]n[][]e[][]-[][]e[][]r[][]r[][]o[][]r[][] [
-][]-[][]i[][]n[][]t[][]e[][]r[][]a[][]c[][]t[][]i[][]o[][]n[][]=[][]b[][]a[][]t
-[][]c[][]h[][]m[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1965--1965
-[][][]\T1/zi4/m/n/9 T[][]h[][]i[][]s[][] [][]i[][]s[][] [][]e[][]-[][]u[][]p[][
-]T[][]e[][]X[][],[][] [][]V[][]e[][]r[][]s[][]i[][]o[][]n[][] [][]3[][].[][]1[]
-[]4[][]1[][]5[][]9[][]2[][]6[][]5[][]-[][]p[][]3[][].[][]8[][].[][]1[][]-[][]u[
-][]1[][].[][]2[][]3[][]-[][]1[][]8[][]0[][]2[][]2[][]6[][]-[][]2[][].[][]6[][] 
-[][]([][]u[][]t[][]f[][]8[][].[][]u[][]p[][]t[][]e[][]x[][])[][] [][]([][]T[][]
-e[][]X[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1965--1965
-[][][]\T1/zi4/m/n/9 [[][]r[][]e[][]v[][]i[][]e[][]w[][]-[][]p[][]d[][]f[][]m[][
-]a[][]k[][]e[][]r[][]][][]$[][][][] [][]u[][]p[][]l[][]a[][]t[][]e[][]x[][] [][
-]-[][]h[][]a[][]l[][]t[][]-[][]o[][]n[][]-[][]e[][]r[][]r[][]o[][]r[][] [][]-[]
-[]f[][]i[][]l[][]e[][]-[][]l[][]i[][]n[][]e[][]-[][]e[][]r[][]r[][]o[][]r[][] [
-][]-[][]i[][]n[][]t[][]e[][]r[][]a[][]c[][]t[][]i[][]o[][]n[][]=[][]b[][]a[][]t
-[][]c[][]h[][]m[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1965--1965
-[][][]\T1/zi4/m/n/9 T[][]h[][]i[][]s[][] [][]i[][]s[][] [][]e[][]-[][]u[][]p[][
-]T[][]e[][]X[][],[][] [][]V[][]e[][]r[][]s[][]i[][]o[][]n[][] [][]3[][].[][]1[]
-[]4[][]1[][]5[][]9[][]2[][]6[][]5[][]-[][]p[][]3[][].[][]8[][].[][]1[][]-[][]u[
-][]1[][].[][]2[][]3[][]-[][]1[][]8[][]0[][]2[][]2[][]6[][]-[][]2[][].[][]6[][] 
-[][]([][]u[][]t[][]f[][]8[][].[][]u[][]p[][]t[][]e[][]x[][])[][] [][]([][]T[][]
-e[][]X[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1965--1965
-[][][]\T1/zi4/m/n/9 [[][]r[][]e[][]v[][]i[][]e[][]w[][]-[][]p[][]d[][]f[][]m[][
-]a[][]k[][]e[][]r[][]][][]$[][][][] [][]u[][]p[][]l[][]a[][]t[][]e[][]x[][] [][
-]-[][]h[][]a[][]l[][]t[][]-[][]o[][]n[][]-[][]e[][]r[][]r[][]o[][]r[][] [][]-[]
-[]f[][]i[][]l[][]e[][]-[][]l[][]i[][]n[][]e[][]-[][]e[][]r[][]r[][]o[][]r[][] [
-][]-[][]i[][]n[][]t[][]e[][]r[][]a[][]c[][]t[][]i[][]o[][]n[][]=[][]b[][]a[][]t
-[][]c[][]h[][]m[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1965--1965
-[][][]\T1/zi4/m/n/9 T[][]h[][]i[][]s[][] [][]i[][]s[][] [][]e[][]-[][]u[][]p[][
-]T[][]e[][]X[][],[][] [][]V[][]e[][]r[][]s[][]i[][]o[][]n[][] [][]3[][].[][]1[]
-[]4[][]1[][]5[][]9[][]2[][]6[][]5[][]-[][]p[][]3[][].[][]8[][].[][]1[][]-[][]u[
-][]1[][].[][]2[][]3[][]-[][]1[][]8[][]0[][]2[][]2[][]6[][]-[][]2[][].[][]6[][] 
-[][]([][]u[][]t[][]f[][]8[][].[][]u[][]p[][]t[][]e[][]x[][])[][] [][]([][]T[][]
-e[][]X[][] []
- []
-
-[49] [50] [51]
-Underfull \hbox (badness 10000) in paragraph at lines 2065--2065
-[][][]\T1/zi4/m/n/9 [[][]r[][]e[][]v[][]i[][]e[][]w[][]-[][]p[][]d[][]f[][]m[][
-]a[][]k[][]e[][]r[][]][][]$[][][][] [][]u[][]p[][]l[][]a[][]t[][]e[][]x[][] [][
-]-[][]h[][]a[][]l[][]t[][]-[][]o[][]n[][]-[][]e[][]r[][]r[][]o[][]r[][] [][]-[]
-[]f[][]i[][]l[][]e[][]-[][]l[][]i[][]n[][]e[][]-[][]e[][]r[][]r[][]o[][]r[][] [
-][]-[][]i[][]n[][]t[][]e[][]r[][]a[][]c[][]t[][]i[][]o[][]n[][]=[][]b[][]a[][]t
-[][]c[][]h[][]m[]
- []
-
-) (./chap02-faq.tex [52]
+]
 第2章
-[53
+[5] [6
 
-] [54] [55] [56
+]) (./chap03-sort.tex [7
 
-] [57] [58] [59] [60
-
-] [61] [62] [63] [64] [65
+] [8
 
 ]
-File: ./images/chap02-faq/codeblock_rpadding1.png Graphic file (type bmp)
-<./images/chap02-faq/codeblock_rpadding1.png>
-[66]
-File: ./images/chap02-faq/codeblock_rpadding2.png Graphic file (type bmp)
-<./images/chap02-faq/codeblock_rpadding2.png>
-[67] [68] [69
+第3章
+[9] [10
+
+]) (./chap04-heap.tex [11
+
+] [12
 
 ]
-LaTeX Font Info:    Font shape `JT2/hgt/eb/n' will be
-(Font)              scaled to size 9.24683pt on input line 678.
-LaTeX Font Info:    Font shape `JY2/hgt/eb/n' will be
-(Font)              scaled to size 9.24683pt on input line 678.
-LaTeX Font Info:    Font shape `JT2/hgt/eb/n' will be
-(Font)              scaled to size 23.0061pt on input line 678.
-LaTeX Font Info:    Font shape `JY2/hgt/eb/n' will be
-(Font)              scaled to size 23.0061pt on input line 678.
-[70
+第4章
+[13] [14
+
+]) (./chap05-dp.tex [15
+
+] [16
 
 ]
-Overfull \hbox (18.96191pt too wide) in paragraph at lines 725--725
-[][][] [][] [][] [][] [][]|   []   |   []   |   []   |   []   |   [][]
- []
+第5章
+[17] [18
 
-File: ./images/chap02-faq/titlepage-samples.png Graphic file (type bmp)
-<./images/chap02-faq/titlepage-samples.png>
-[71] [72] [73
+]) [19
 
-]
-Underfull \hbox (badness 1412) in paragraph at lines 813--815
-[]\JY2/hmc/m/it/10 ただしこの機能では 、 \T1/lmr/m/n/10 L[]T[]X \JY2/
-hmc/m/it/10 のスタイルフ ァイル （\T1/fvm/m/n/10 sty/starter.sty \JY2
-/hmc/m/it/10 や
- []
+] [20
 
-[74]
-Underfull \hbox (badness 10000) in paragraph at lines 848--848
-[][][]\T1/fvm/m/n/9 t[][]e[][]x[][]d[][]o[][]c[][]u[][]m[][]e[][]n[][]t[][]c[][
-]l[][]a[][]s[][]s[][]:[][] [][][[][]"[][]j[][]s[][]b[][]o[][]o[][]k[][]"[][],[]
-[] [][]"[][]u[][]p[][]l[][]a[][]t[][]e[][]x[][],[][]p[][]a[][]p[][]e[][]r[][]s[
-][]i[][]z[][]e[][],[][]t[][]w[][]o[][]s[][]i[][]d[][]e[][],[][]b[][]5[][]j[][],
-[][]1[][]0[][]p[][]t[][],[][]o[][]p[][]e[][]n[][]r[][]i[][]g[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 848--848
-[][][]\T1/fvm/m/n/9 t[][]e[][]x[][]d[][]o[][]c[][]u[][]m[][]e[][]n[][]t[][]c[][
-]l[][]a[][]s[][]s[][]:[][] [][][[][]"[][]j[][]s[][]b[][]o[][]o[][]k[][]"[][],[]
-[] [][]"[][]u[][]p[][]l[][]a[][]t[][]e[][]x[][],[][]p[][]a[][]p[][]e[][]r[][]s[
-][]i[][]z[][]e[][],[][]o[][]n[][]e[][]s[][]i[][]d[][]e[][],[][]a[][]5[][]j[][],
-[][]1[][]0[][]p[][]t[][],[][]o[][]p[][]e[][]n[][]a[][]n[][]y[]
- []
-
-[75]
-LaTeX Font Info:    Font shape `T1/zi4/bx/n' in size <9> not available
-(Font)              Font shape `T1/zi4/b/n' tried instead on input line 924.
-LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 9.0pt on input line 924.
-[76]) [77] [78
-
-] (./chap99-postscript.tex) [79
+] (./chap99-afterword.tex) [21
 
 ]
+LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 352.
 
 LaTeX Font Warning: Font shape `JT2/hmc/m/sl' undefined
-(Font)              using `JT2/hmc/m/n' instead on input line 341.
+(Font)              using `JT2/hmc/m/n' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `JY2/hmc/m/sl' undefined
-(Font)              using `JY2/hmc/m/n' instead on input line 341.
+(Font)              using `JY2/hmc/m/n' instead on input line 352.
 
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -1930,171 +1439,32 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the book.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 372.
-[80
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 385.
+[22
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 372.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 385.
 (./book.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 372.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 372.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 385.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 385.
 Package rerunfilecheck Info: File `book.out' has not changed.
-(rerunfilecheck)             Checksum: 144E80A23E408E43BD1D2CD9DE29452D;7964.
+(rerunfilecheck)             Checksum: 19AAD77F91DC4FEC2718EEFA220D44AA;2564.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 372.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 385.
  )
-(\end occurred when \iffalse on line 940 was incomplete)
-(\end occurred when \ifx on line 937 was incomplete)
-(\end occurred when \iffalse on line 937 was incomplete)
-(\end occurred when \ifx on line 918 was incomplete)
-(\end occurred when \iffalse on line 918 was incomplete)
-(\end occurred when \iffalse on line 892 was incomplete)
-(\end occurred when \iffalse on line 867 was incomplete)
-(\end occurred when \iffalse on line 850 was incomplete)
-(\end occurred when \iffalse on line 834 was incomplete)
-(\end occurred when \ifx on line 823 was incomplete)
-(\end occurred when \iffalse on line 823 was incomplete)
-(\end occurred when \ifx on line 807 was incomplete)
-(\end occurred when \iffalse on line 807 was incomplete)
-(\end occurred when \iffalse on line 774 was incomplete)
-(\end occurred when \iffalse on line 716 was incomplete)
-(\end occurred when \iffalse on line 690 was incomplete)
-(\end occurred when \iffalse on line 616 was incomplete)
-(\end occurred when \iffalse on line 577 was incomplete)
-(\end occurred when \ifx on line 555 was incomplete)
-(\end occurred when \iffalse on line 555 was incomplete)
-(\end occurred when \ifx on line 545 was incomplete)
-(\end occurred when \iffalse on line 545 was incomplete)
-(\end occurred when \iffalse on line 533 was incomplete)
-(\end occurred when \iffalse on line 502 was incomplete)
-(\end occurred when \iffalse on line 491 was incomplete)
-(\end occurred when \iffalse on line 480 was incomplete)
-(\end occurred when \iffalse on line 469 was incomplete)
-(\end occurred when \iffalse on line 458 was incomplete)
-(\end occurred when \iffalse on line 447 was incomplete)
-(\end occurred when \iffalse on line 436 was incomplete)
-(\end occurred when \iffalse on line 395 was incomplete)
-(\end occurred when \iffalse on line 357 was incomplete)
-(\end occurred when \iffalse on line 336 was incomplete)
-(\end occurred when \iffalse on line 291 was incomplete)
-(\end occurred when \iffalse on line 259 was incomplete)
-(\end occurred when \iffalse on line 224 was incomplete)
-(\end occurred when \iffalse on line 190 was incomplete)
-(\end occurred when \iffalse on line 161 was incomplete)
-(\end occurred when \iffalse on line 141 was incomplete)
-(\end occurred when \iffalse on line 100 was incomplete)
-(\end occurred when \iffalse on line 79 was incomplete)
-(\end occurred when \iffalse on line 58 was incomplete)
-(\end occurred when \iffalse on line 19 was incomplete)
-(\end occurred when \ifx on line 2057 was incomplete)
-(\end occurred when \iffalse on line 2057 was incomplete)
-(\end occurred when \ifx on line 2034 was incomplete)
-(\end occurred when \iffalse on line 2034 was incomplete)
-(\end occurred when \ifx on line 2012 was incomplete)
-(\end occurred when \iffalse on line 2012 was incomplete)
-(\end occurred when \ifx on line 1939 was incomplete)
-(\end occurred when \iffalse on line 1939 was incomplete)
-(\end occurred when \ifx on line 1872 was incomplete)
-(\end occurred when \iffalse on line 1872 was incomplete)
-(\end occurred when \ifx on line 1849 was incomplete)
-(\end occurred when \iffalse on line 1849 was incomplete)
-(\end occurred when \iffalse on line 1710 was incomplete)
-(\end occurred when \iffalse on line 1659 was incomplete)
-(\end occurred when \iffalse on line 1603 was incomplete)
-(\end occurred when \iffalse on line 1484 was incomplete)
-(\end occurred when \ifx on line 1384 was incomplete)
-(\end occurred when \iffalse on line 1384 was incomplete)
-(\end occurred when \iffalse on line 1365 was incomplete)
-(\end occurred when \iffalse on line 1318 was incomplete)
-(\end occurred when \iffalse on line 1282 was incomplete)
-(\end occurred when \iffalse on line 1219 was incomplete)
-(\end occurred when \iffalse on line 1183 was incomplete)
-(\end occurred when \iffalse on line 1174 was incomplete)
-(\end occurred when \iffalse on line 1160 was incomplete)
-(\end occurred when \iffalse on line 1152 was incomplete)
-(\end occurred when \iffalse on line 1123 was incomplete)
-(\end occurred when \iffalse on line 1044 was incomplete)
-(\end occurred when \iffalse on line 1022 was incomplete)
-(\end occurred when \iffalse on line 994 was incomplete)
-(\end occurred when \iffalse on line 966 was incomplete)
-(\end occurred when \iffalse on line 947 was incomplete)
-(\end occurred when \iffalse on line 939 was incomplete)
-(\end occurred when \iffalse on line 908 was incomplete)
-(\end occurred when \iffalse on line 899 was incomplete)
-(\end occurred when \iffalse on line 876 was incomplete)
-(\end occurred when \iffalse on line 867 was incomplete)
-(\end occurred when \iffalse on line 856 was incomplete)
-(\end occurred when \iffalse on line 847 was incomplete)
-(\end occurred when \iffalse on line 827 was incomplete)
-(\end occurred when \iffalse on line 810 was incomplete)
-(\end occurred when \iffalse on line 794 was incomplete)
-(\end occurred when \iffalse on line 785 was incomplete)
-(\end occurred when \iffalse on line 777 was incomplete)
-(\end occurred when \iffalse on line 768 was incomplete)
-(\end occurred when \iffalse on line 757 was incomplete)
-(\end occurred when \iffalse on line 748 was incomplete)
-(\end occurred when \iffalse on line 739 was incomplete)
-(\end occurred when \iffalse on line 730 was incomplete)
-(\end occurred when \iffalse on line 722 was incomplete)
-(\end occurred when \iffalse on line 713 was incomplete)
-(\end occurred when \iffalse on line 698 was incomplete)
-(\end occurred when \iffalse on line 687 was incomplete)
-(\end occurred when \ifx on line 657 was incomplete)
-(\end occurred when \iffalse on line 657 was incomplete)
-(\end occurred when \iffalse on line 652 was incomplete)
-(\end occurred when \iffalse on line 636 was incomplete)
-(\end occurred when \ifx on line 622 was incomplete)
-(\end occurred when \iffalse on line 622 was incomplete)
-(\end occurred when \iffalse on line 612 was incomplete)
-(\end occurred when \ifx on line 602 was incomplete)
-(\end occurred when \iffalse on line 602 was incomplete)
-(\end occurred when \iffalse on line 593 was incomplete)
-(\end occurred when \iffalse on line 566 was incomplete)
-(\end occurred when \iffalse on line 530 was incomplete)
-(\end occurred when \iffalse on line 521 was incomplete)
-(\end occurred when \iffalse on line 512 was incomplete)
-(\end occurred when \iffalse on line 507 was incomplete)
-(\end occurred when \iffalse on line 502 was incomplete)
-(\end occurred when \iffalse on line 497 was incomplete)
-(\end occurred when \iffalse on line 468 was incomplete)
-(\end occurred when \iffalse on line 408 was incomplete)
-(\end occurred when \ifx on line 399 was incomplete)
-(\end occurred when \iffalse on line 399 was incomplete)
-(\end occurred when \iffalse on line 393 was incomplete)
-(\end occurred when \iffalse on line 350 was incomplete)
-(\end occurred when \iffalse on line 319 was incomplete)
-(\end occurred when \iffalse on line 294 was incomplete)
-(\end occurred when \iffalse on line 248 was incomplete)
-(\end occurred when \iffalse on line 225 was incomplete)
-(\end occurred when \iffalse on line 198 was incomplete)
-(\end occurred when \iffalse on line 144 was incomplete)
-(\end occurred when \iffalse on line 118 was incomplete)
-(\end occurred when \iffalse on line 103 was incomplete)
-(\end occurred when \iffalse on line 90 was incomplete)
-(\end occurred when \iffalse on line 80 was incomplete)
-(\end occurred when \iffalse on line 67 was incomplete)
-(\end occurred when \iffalse on line 52 was incomplete)
-(\end occurred when \iffalse on line 43 was incomplete)
-(\end occurred when \iffalse on line 27 was incomplete)
-(\end occurred when \iffalse on line 26 was incomplete)
-(\end occurred when \ifx on line 12 was incomplete)
-(\end occurred when \iffalse on line 12 was incomplete)
 (\end occurred when \ifx on line 448 was incomplete)
 (\end occurred when \iffalse on line 170 was incomplete)
 (\end occurred when \iffalse on line 25 was incomplete) 
 Here is how much of TeX's memory you used:
- 14523 strings out of 495109
- 208399 string characters out of 6185003
- 502282 words of memory out of 5000000
- 17455 multiletter control sequences out of 15000+600000
- 132212 words of font info for 202 fonts, out of 8000000 for 9000
+ 14217 strings out of 495109
+ 202983 string characters out of 6185003
+ 302012 words of memory out of 5000000
+ 17180 multiletter control sequences out of 15000+600000
+ 78870 words of font info for 128 fonts, out of 8000000 for 9000
  19 hyphenation exceptions out of 8191
- 41i,16n,80p,716b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,80p,422b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on book.dvi (88 pages, 304184 bytes).
+Output written on book.dvi (28 pages, 43856 bytes).

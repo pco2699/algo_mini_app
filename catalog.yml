@@ -2,10 +2,10 @@ PREDEF:
   - chap00-preface.re
 
 CHAPS:
-  - chap01-search.re
-  - chap02-sort.re
-  - chap03-heap.re
-  - chap04-dfs.re
+  - chap01-install.re
+  - chap02-search.re
+  - chap03-sort.re
+  - chap04-heap.re
   - chap05-dp.re
 
 APPENDIX:

@@ -1,51 +1,9 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}原稿本文を書くための機能}{\reset@font\mtcSfont 1}{section.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 強調}{\reset@font\mtcSSfont 1}{section*.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 目立たせないための「\texttt {@\textless {}weak\textgreater {}\{\}}」}{\reset@font\mtcSSfont 2}{section*.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 番号つきリストの機能強化}{\reset@font\mtcSSfont 3}{section*.8}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode ノート}{\reset@font\mtcSSfont 6}{section*.9}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode プログラムコード用のコマンドを統一}{\reset@font\mtcSSfont 9}{section*.10}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode ターミナル画面を表す「\texttt {//terminal}」ブロック}{\reset@font\mtcSSfont 13}{section*.11}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode プログラムコード中の長い行を自動的に折り返す}{\reset@font\mtcSSfont 14}{section*.12}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode プログラムやターミナルの行番号を出力}{\reset@font\mtcSSfont 16}{section*.13}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode ラベル指定なしでリスト番号を出力}{\reset@font\mtcSSfont 19}{section*.14}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode キャプションなしでもリスト番号だけを出力}{\reset@font\mtcSSfont 20}{section*.15}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode プログラムのキャプション直後の改ページを抑制}{\reset@font\mtcSSfont 21}{section*.16}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode コラム内の脚注}{\reset@font\mtcSSfont 21}{section*.18}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 右寄せ、左寄せ、センタリング}{\reset@font\mtcSSfont 22}{section*.19}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 章の概要}{\reset@font\mtcSSfont 23}{section*.20}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 図が次のページに送られるときにスペースを空けない}{\reset@font\mtcSSfont 24}{section*.21}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 図のまわりを線で囲む}{\reset@font\mtcSSfont 26}{section*.23}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 何もしない命令「\texttt {@}\textless {}nop\textgreater {}\{...\}」}{\reset@font\mtcSSfont 27}{section*.26}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 章や項を参照する「\texttt {@}\texttt {\textless {}secref\textgreater {}\{\}}」}{\reset@font\mtcSSfont 29}{section*.27}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 「{\gtfamily \sffamily @}{\gtfamily \sffamily \textless {}chapref\textgreater {}\{\}}」や「{\gtfamily \sffamily @}{\gtfamily \sffamily \textless {}hd\textgreater {}\{\}}」をリンクに}{\reset@font\mtcSSfont 32}{section*.28}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode ターミナルでのカーソル}{\reset@font\mtcSSfont 32}{section*.29}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode その他}{\reset@font\mtcSSfont 33}{section*.30}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}レイアウトやデザインに関する変更や拡張}{\reset@font\mtcSfont 34}{section.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode Starterの設定ファイル「{\gtfamily \sffamily config{-}starter.yml}」}{\reset@font\mtcSSfont 34}{section*.31}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode フォントサイズの変更に対応}{\reset@font\mtcSSfont 34}{section*.32}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode A5サイズの指定に対応}{\reset@font\mtcSSfont 35}{section*.34}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 本文の幅を全角40文字より長くできる}{\reset@font\mtcSSfont 36}{section*.35}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 奇数ページと偶数ページで左右の余白を変える}{\reset@font\mtcSSfont 37}{section*.36}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode ページ上部の余白を減らし、その分を本文の高さに追加}{\reset@font\mtcSSfont 38}{section*.38}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode ソースコード表示用のフォントを変更}{\reset@font\mtcSSfont 38}{section*.39}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 章や節のデザインを変更可能}{\reset@font\mtcSSfont 39}{section*.41}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 章のタイトルページを作成可能}{\reset@font\mtcSSfont 40}{section*.44}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 目次の文字を小さく、行間を狭く}{\reset@font\mtcSSfont 41}{section*.46}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode キャプションのデザインを変更}{\reset@font\mtcSSfont 41}{section*.47}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 引用のデザインを変更}{\reset@font\mtcSSfont 41}{section*.48}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode ページヘッダーを変更}{\reset@font\mtcSSfont 42}{section*.49}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode ページ番号のデザインを変更}{\reset@font\mtcSSfont 42}{section*.50}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 箇条書きの行頭記号を変更}{\reset@font\mtcSSfont 42}{section*.51}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode タイトルページと奥付を独立したファイルに}{\reset@font\mtcSSfont 43}{section*.52}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 奥付が必ず最終ページになるよう修正}{\reset@font\mtcSSfont 43}{section*.53}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode コラムがページまたぎする場合は横線を入れない}{\reset@font\mtcSSfont 44}{section*.54}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}\LaTeX {}のコマンドやスタイルファイルに関する機能}{\reset@font\mtcSfont 45}{section.1.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode スタイルシートを追加}{\reset@font\mtcSSfont 45}{section*.56}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 印刷用PDFと電子用PDFを切り替える}{\reset@font\mtcSSfont 46}{section*.57}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode ドラフトモードにして画像読み込みを省略する}{\reset@font\mtcSSfont 47}{section*.58}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode コンパイル時の出力を抑制}{\reset@font\mtcSSfont 47}{section*.59}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \LaTeX {}コマンドにオプションを追加}{\reset@font\mtcSSfont 48}{section*.60}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode 実行する\LaTeX {}コマンドをオプションつきで出力}{\reset@font\mtcSSfont 48}{section*.61}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode PDF生成を高速化する}{\reset@font\mtcSSfont 50}{section*.62}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode PDFにノンブルをつける}{\reset@font\mtcSSfont 50}{section*.63}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode rakeコマンドのデフォルトタスクを指定する}{\reset@font\mtcSSfont 51}{section*.64}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}今回の構成}{\reset@font\mtcSfont 1}{section.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode Firebase}{\reset@font\mtcSSfont 2}{section*.9}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode Firebase Hosting}{\reset@font\mtcSSfont 2}{section*.10}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode Cloud Firestore}{\reset@font\mtcSSfont 2}{section*.11}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode Nuxt.js}{\reset@font\mtcSSfont 2}{section*.12}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode Cloud Firestore}{\reset@font\mtcSSfont 2}{section*.13}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}環境をつくろう}{\reset@font\mtcSfont 3}{section.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode Firebaseへのサインアップ}{\reset@font\mtcSSfont 3}{section*.14}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode Nuxt.jsの導入}{\reset@font\mtcSSfont 3}{section*.15}}

@@ -1,83 +1,36 @@
 \contentsline {chapter}{まえがき}{i}{chapter*.1}
-\contentsline {chapter}{\numberline {第1章}Re:VIEW Starterの独自機能}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}原稿本文を書くための機能}{1}{section.1.1}
-\contentsline {subsection}{強調}{1}{section*.6}
-\contentsline {subsection}{目立たせないための「\texttt {@\textless {}weak\textgreater {}\{\}}」}{2}{section*.7}
-\contentsline {subsection}{番号つきリストの機能強化}{3}{section*.8}
-\contentsline {subsection}{ノート}{6}{section*.9}
-\contentsline {subsection}{プログラムコード用のコマンドを統一}{9}{section*.10}
-\contentsline {subsection}{ターミナル画面を表す「\texttt {//terminal}」ブロック}{13}{section*.11}
-\contentsline {subsection}{プログラムコード中の長い行を自動的に折り返す}{14}{section*.12}
-\contentsline {subsection}{プログラムやターミナルの行番号を出力}{16}{section*.13}
-\contentsline {subsection}{ラベル指定なしでリスト番号を出力}{19}{section*.14}
-\contentsline {subsection}{キャプションなしでもリスト番号だけを出力}{20}{section*.15}
-\contentsline {subsection}{プログラムのキャプション直後の改ページを抑制}{21}{section*.16}
-\contentsline {subsection}{コラム内の脚注}{21}{section*.18}
-\contentsline {subsection}{右寄せ、左寄せ、センタリング}{22}{section*.19}
-\contentsline {subsection}{章の概要}{23}{section*.20}
-\contentsline {subsection}{図が次のページに送られるときにスペースを空けない}{24}{section*.21}
-\contentsline {subsection}{図のまわりを線で囲む}{26}{section*.23}
-\contentsline {subsection}{何もしない命令「\texttt {@}\textless {}nop\textgreater {}\{...\}」}{27}{section*.26}
-\contentsline {subsection}{章や項を参照する「\texttt {@}\texttt {\textless {}secref\textgreater {}\{\}}」}{29}{section*.27}
-\contentsline {subsection}{「{\gtfamily \sffamily @}{\gtfamily \sffamily \textless {}chapref\textgreater {}\{\}}」や「{\gtfamily \sffamily @}{\gtfamily \sffamily \textless {}hd\textgreater {}\{\}}」をリンクに}{32}{section*.28}
-\contentsline {subsection}{ターミナルでのカーソル}{32}{section*.29}
-\contentsline {subsection}{その他}{33}{section*.30}
-\contentsline {section}{\numberline {1.2}レイアウトやデザインに関する変更や拡張}{34}{section.1.2}
-\contentsline {subsection}{Starterの設定ファイル「{\gtfamily \sffamily config{-}starter.yml}」}{34}{section*.31}
-\contentsline {subsection}{フォントサイズの変更に対応}{34}{section*.32}
-\contentsline {subsection}{A5サイズの指定に対応}{35}{section*.34}
-\contentsline {subsection}{本文の幅を全角40文字より長くできる}{36}{section*.35}
-\contentsline {subsection}{奇数ページと偶数ページで左右の余白を変える}{37}{section*.36}
-\contentsline {subsection}{ページ上部の余白を減らし、その分を本文の高さに追加}{38}{section*.38}
-\contentsline {subsection}{ソースコード表示用のフォントを変更}{38}{section*.39}
-\contentsline {subsection}{章や節のデザインを変更可能}{39}{section*.41}
-\contentsline {subsection}{章のタイトルページを作成可能}{40}{section*.44}
-\contentsline {subsection}{目次の文字を小さく、行間を狭く}{41}{section*.46}
-\contentsline {subsection}{キャプションのデザインを変更}{41}{section*.47}
-\contentsline {subsection}{引用のデザインを変更}{41}{section*.48}
-\contentsline {subsection}{ページヘッダーを変更}{42}{section*.49}
-\contentsline {subsection}{ページ番号のデザインを変更}{42}{section*.50}
-\contentsline {subsection}{箇条書きの行頭記号を変更}{42}{section*.51}
-\contentsline {subsection}{タイトルページと奥付を独立したファイルに}{43}{section*.52}
-\contentsline {subsection}{奥付が必ず最終ページになるよう修正}{43}{section*.53}
-\contentsline {subsection}{コラムがページまたぎする場合は横線を入れない}{44}{section*.54}
-\contentsline {section}{\numberline {1.3}\LaTeX {}のコマンドやスタイルファイルに関する機能}{45}{section.1.3}
-\contentsline {subsection}{スタイルシートを追加}{45}{section*.56}
-\contentsline {subsection}{印刷用PDFと電子用PDFを切り替える}{46}{section*.57}
-\contentsline {subsection}{ドラフトモードにして画像読み込みを省略する}{47}{section*.58}
-\contentsline {subsection}{コンパイル時の出力を抑制}{47}{section*.59}
-\contentsline {subsection}{\LaTeX {}コマンドにオプションを追加}{48}{section*.60}
-\contentsline {subsection}{実行する\LaTeX {}コマンドをオプションつきで出力}{48}{section*.61}
-\contentsline {subsection}{PDF生成を高速化する}{50}{section*.62}
-\contentsline {subsection}{PDFにノンブルをつける}{50}{section*.63}
-\contentsline {subsection}{rakeコマンドのデフォルトタスクを指定する}{51}{section*.64}
-\contentsline {chapter}{\numberline {第2章}Re:VIEW Starter FAQ}{53}{chapter.2}
-\contentsline {section}{\numberline {2.1}コメント}{53}{section.2.1}
-\contentsline {subsection}{範囲コメントはないの？}{53}{section*.65}
-\contentsline {subsection}{行コメントを使ったら勝手に段落が分かれたんだけど、なんで？}{54}{section*.66}
-\contentsline {section}{\numberline {2.2}箇条書き}{56}{section.2.2}
-\contentsline {subsection}{箇条書きで英単語が勝手に結合するんだけど？}{56}{section*.67}
-\contentsline {subsection}{順序つき箇条書きに「A.」や「a.」や「(1)」を使いたい}{56}{section*.68}
-\contentsline {subsection}{順序つき箇条書きを入れ子にできない？}{58}{section*.69}
-\contentsline {section}{\numberline {2.3}ブロック命令}{60}{section.2.3}
-\contentsline {subsection}{ブロックの中に別のブロックを入れるとエラーになるよ？}{60}{section*.70}
-\contentsline {subsection}{ブロックの中に箇条書きを入れても反映されないよ？}{61}{section*.71}
-\contentsline {subsection}{「\texttt {//info\{} ... \texttt {//\}}」のキャプションに「■メモ：」がつくんだけど？}{62}{section*.72}
-\contentsline {section}{\numberline {2.4}ソースコード}{65}{section.2.4}
-\contentsline {subsection}{ソースコードの見た目が崩れるんだけど？}{65}{section*.73}
-\contentsline {subsection}{コラム中のソースコードがページまたぎしてくれないよ？}{66}{section*.74}
-\contentsline {subsection}{ソースコードを別ファイルから読み込む方法はないの？}{66}{section*.75}
-\contentsline {subsection}{日本語だと長い行での折り返しが効かないの？}{66}{section*.76}
-\contentsline {subsection}{まだ文字が入りそうなのに折り返しされるのはなんで？}{66}{section*.77}
-\contentsline {section}{\numberline {2.5}コンパイル}{69}{section.2.5}
-\contentsline {subsection}{なんで\LaTeX {}のコンパイルがいつも3回実行されるの？}{69}{section*.80}
-\contentsline {subsection}{コンパイルに時間かかりすぎ。もっと速くできない？}{69}{section*.81}
-\contentsline {section}{\numberline {2.6}タイトルページ（大扉）}{70}{section.2.6}
-\contentsline {subsection}{タイトルが長いので、指定した箇所で改行したいんだけど？}{70}{section*.82}
-\contentsline {subsection}{タイトルぺージがださい。もっとかっこよくならない？}{71}{section*.83}
-\contentsline {section}{\numberline {2.7}その他}{73}{section.2.7}
-\contentsline {subsection}{設定ファイルをいじったら、動かなくなった！}{73}{section*.85}
-\contentsline {subsection}{印刷用と電子用で設定を少し変えるにはどうするの？}{74}{section*.86}
-\contentsline {subsection}{\LaTeX {}のスタイルファイルから環境変数を読める？}{77}{section*.87}
-\contentsline {chapter}{あとがき}{79}{appendix*.88}
-\contentsline {section}{著者紹介}{79}{section*.89}
+\contentsline {section}{自己紹介}{i}{section*.2}
+\contentsline {section}{Webエンジニアにアルゴリズム/データ構造の知識は必要か}{i}{section*.3}
+\contentsline {section}{でも、アルゴリズムの勉強って何に使うの？？}{i}{section*.4}
+\contentsline {section}{アルゴリズムミニアプリってなに？}{ii}{section*.5}
+\contentsline {section}{対象読者}{ii}{section*.6}
+\contentsline {section}{本書の構成}{ii}{section*.7}
+\contentsline {chapter}{\numberline {第1章}環境構築}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}今回の構成}{1}{section.1.1}
+\contentsline {subsection}{Firebase}{2}{section*.9}
+\contentsline {subsection}{Firebase Hosting}{2}{section*.10}
+\contentsline {subsection}{Cloud Firestore}{2}{section*.11}
+\contentsline {subsection}{Nuxt.js}{2}{section*.12}
+\contentsline {subsection}{Cloud Firestore}{2}{section*.13}
+\contentsline {section}{\numberline {1.2}環境をつくろう}{3}{section.1.2}
+\contentsline {subsection}{Firebaseへのサインアップ}{3}{section*.14}
+\contentsline {subsection}{Nuxt.jsの導入}{3}{section*.15}
+\contentsline {chapter}{\numberline {第2章}探索}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}アルゴリズムの説明}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}作るアプリ}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Webアプリのコード説明}{7}{section.2.3}
+\contentsline {chapter}{\numberline {第3章}ソート}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}アルゴリズムの説明}{9}{section.3.1}
+\contentsline {subsection}{バブルソート}{9}{section*.16}
+\contentsline {section}{\numberline {3.2}作るアプリ}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Webアプリのコード説明}{11}{section.3.3}
+\contentsline {chapter}{\numberline {第4章}ヒープ/二分探索木}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}アルゴリズムの説明}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}作るアプリ}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Webアプリのコード説明b}{15}{section.4.3}
+\contentsline {chapter}{\numberline {第5章}動的計画法}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}アルゴリズムの説明}{17}{section.5.1}
+\contentsline {subsection}{バブルソート}{17}{section*.17}
+\contentsline {section}{\numberline {5.2}作るアプリ}{18}{section.5.2}
+\contentsline {section}{\numberline {5.3}Webアプリのコード説明}{19}{section.5.3}
+\contentsline {chapter}{あとがき}{21}{appendix*.18}
