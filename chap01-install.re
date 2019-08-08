@@ -71,7 +71,23 @@ Googleのログインが求められると思うので自分のGoogleアカウ�
 
 「プロジェクトを追加」でプロジェクトを追加しましょう。
 
+//image[firebase_project_start][Firebaseのプロジェクトの名前]{
+//}
 
+「プロジェクトの名前」を聞かれるので適当に「algo-mini-app」とか入力しましょう。
+
+//image[firebase_project_start2][Firebaseのアナリティクスの利用有無]{
+//}
+
+アナリティクスの利用有無を聞かれるので「なし」と答えましょう。
+（今回はもちろん、利用しません。）
+
+//image[firebase_completed][Firebaseのプロジェクト作成完了]{
+//}
+
+@<img>[firebase_completed] が出ればfirebaseのプロジェクト作成が完了です！
+
+あとで、実際にNuxt.jsとも連携していきます！
 
 === Nuxt.jsの導入
 
@@ -83,14 +99,43 @@ Googleのログインが求められると思うので自分のGoogleアカウ�
 //table[nuxt_ver][nuxt_ver]{
 プロダクト名	バージョン
 -----------------------
-Nuxt.js	2.4.0
+Nuxt.js	2.8.1
 Node.js	10.14
-Vuetify	1.5.0
+Vuetify	2.0.5
 //}
 
 ==== Nuxtの初期プロジェクト作成
 
 Nuxtを動かすには、Node.jsの動作環境が必要です。
 本書では、Node.jsの環境構築の手順は省略しますのでネットで検索して、Node.jsの環境構築をお願いします。
-Nuxtの初期プロジェクトは
 
+Nuxtの初期プロジェクトは @<tt>{create-nuxt-app} というコマンドを利用して構築すると簡単です。
+Node.jsのバージョンが10系であれば、更に @<tt>{npx}というコマンドが使えるのでそれを組み合わせて
+コンソールで以下の内容を入力しましょう。
+
+//cmd{
+$ npx create-nuxt-app
+}
+
+ダイアログで色々聞かれると思うので、次のとおり回答しましょう。
+
+//cmd{
+npx: 341個のパッケージを34.576秒でインストールしました。
+
+create-nuxt-app v2.9.2
+✨  Generating Nuxt.js project in .
+? Project name algo-mini-app // プロジェクト名を指定します。
+? Project description Sample Project for Algo Mini App // プロジェクト名の説明を指定します。
+? Author name pco2699 // 開発者の名前(あなたです！)を入れてください。
+? Choose the package manager Npm // 今回利用するパッケージマネージャを指定します。今回はnpmというものを利用します。
+? Choose UI framework Vuetify.js // 利用するUIフレームワークを指定します。今回はVuetifyを利用します。
+? Choose custom server framework None (Recommended) // 利用するサーバサイドのフレームワークを指定します。今回は利用しないので何も指定しません。
+? Choose Nuxt.js modules Progressive Web App (PWA) Support // axios(HTTPで通信を行うためのもの)、PWA(Webにアプリのような挙動をさせる技術)を選べますが、今回はPWAのみ指定します。
+? Choose linting tools ESLint, Prettier // Lint(文法チェックや静的解析)を行うかどうかを指定します。私は指定してますが、指定しなくても開発できます。
+? Choose test framework Jest // 利用するテストフレームワークとしてJestを指定します。
+? Choose rendering mode Universal (SSR) // レンダリングの方式を指定します。今回はUniversalを指定します。
+}
+
+これで Nuxtのプロジェクトができました。
+
+=== Nuxt.jsとFirebaseの連携設定
