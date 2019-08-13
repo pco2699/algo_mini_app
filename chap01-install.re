@@ -115,7 +115,7 @@ Node.jsのバージョンが10系であれば、更に @<tt>{npx}というコマ
 
 //cmd{
 $ npx create-nuxt-app
-}
+//}
 
 ダイアログで色々聞かれると思うので、次のとおり回答しましょう。
 
@@ -134,8 +134,123 @@ create-nuxt-app v2.9.2
 ? Choose linting tools ESLint, Prettier // Lint(文法チェックや静的解析)を行うかどうかを指定します。私は指定してますが、指定しなくても開発できます。
 ? Choose test framework Jest // 利用するテストフレームワークとしてJestを指定します。
 ? Choose rendering mode Universal (SSR) // レンダリングの方式を指定します。今回はUniversalを指定します。
-}
+//}
 
 これで Nuxtのプロジェクトができました。
 
 === Nuxt.jsとFirebaseの連携設定
+
+さきほど作ったNuxt.jsのプロジェクトとFirebaseを連携させる設定を行いましょう。
+
+==== Firebase CLIのインストール
+
+Firebaseを連携させるには、まずコマンドラインのツールを導入しましょう。
+次のコマンドを打つことで、Firebaseのコマンドラインツールを導入できます。
+
+//cmd{
+$ npm install -g firebase-tools
+//}
+
+次に実際にFirebaseにログインしましょう。
+コンソールで次のコマンドを打ってください。
+
+//cmd{
+$ firebase login
+//}
+
+ブラウザが立ち上がり、Googleのログインを促されるのでログインすれば
+ログインが完了です。
+
+==== Firebaseの設定
+
+NuxtプロジェクトにFirebaseを設定します。
+さきほどNuxtのプロジェクトで次のコマンドを打ちます。
+
+//cmd{
+$ cd {Nuxtのプロジェクトを作ったディレクトリ}
+$ firebase init
+//}
+
+かっこいいFirebaseのロゴとともにプロンプトが立ち上がりますので答えていきましょう。
+まずは「Are you ready to proceed?(次に進んでもいいですか？)」と聞かれるので
+問題なければ、「Y」と押しましょう。
+
+//cmd{
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  {Nuxtのディレクトリ}
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+? Are you ready to proceed? (Y/n) Y
+//}
+
+次に、どのFirebaseのサービスを利用するか聞かれるので
+今回は@<tt>{Firestore}と@<tt>{Hosting}を選択しましょう。
+
+//cmd{
+? Which Firebase CLI features do you want to setup for this folder? Press Space to select features, then Enter to confirm your choices.
+ ( ) Database: Deploy Firebase Realtime Database Rules
+ (*) Firestore: Deploy rules and create indexes for Firestore
+ ( ) Functions: Configure and deploy Cloud Functions
+>(*) Hosting: Configure and deploy Firebase Hosting sites
+ ( ) Storage: Deploy Cloud Storage security rules
+//}
+
+次にどのプロジェクトと紐付けるかを聞かれるので、さきほど作ったFirebaseのプロジェクトと紐付けましょう。
+
+//cmd{
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Select a default Firebase project for this directory: (Use arrow keys)
+ [don't setup a default project]
+>  algo-mini-app (algo-mini-app)
+   VueWedding (vuewedding-c05d9)
+(Move up and down to reveal more choices)
+//}
+
+次にFirestoreのセットアップを行います。
+まずは、Firestoreのセキュリティルールの設定ファイルなどの名称について聞かれるので
+すべてなにも押さずにデフォルトのものにしておきましょう。
+
+//cmd{
+=== Firestore Setup
+
+Firestore Security Rules allow you to define how and when to allow
+requests. You can keep these rules in your project directory
+and publish them with firebase deploy.
+
+? What file should be used for Firestore Rules? (firestore.rules)
+
+Firestore indexes allow you to perform complex queries while
+maintaining performance that scales with the size of the result
+set. You can keep index definitions in your project directory
+and publish them with firebase deploy.
+
+? What file should be used for Firestore indexes? (firestore.indexes.json)
+//}
+
+
+
+//cmd{
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? dist
+? Configure as a single-page app (rewrite all urls to /index.html)? No
+//}
+
