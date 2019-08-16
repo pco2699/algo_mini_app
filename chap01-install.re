@@ -19,7 +19,7 @@
 Firebaseを利用することで、難しかったインフラ構築やサーバーデプロイなどの作業が不要になるため、一人でWebサービスをサクッとプロトタイピングするのに向いています。
 
 また、複雑な要件や大量のアクセス、大人数に利用される利用要件が無ければ @<b>{ほぼ無料} で使えるのが素晴らしいポイントです。
-ほぼ無料と書きましたが、今回のアプリを作る分には、お金はかからないと思います。
+ほぼ無料と書きましたが、今回のような小規模なアプリを作る分には、お金はかからないと思います。
 
 サクッと一人で、コストも抑えてWebアプリを作るため、Firebaseを今回は採用することにしました。
 
@@ -138,6 +138,15 @@ create-nuxt-app v2.9.2
 
 これで Nuxtのプロジェクトができました。
 
+あとは、個人的な好みで細かいカスタマイズを入れておきます。
+
+==== Nuxtのプロジェクトのカスタマイズ
+
+===== nuxt-propety-decolatorを入れる
+
+
+
+
 === Nuxt.jsとFirebaseの連携設定
 
 さきほど作ったNuxt.jsのプロジェクトとFirebaseを連携させる設定を行いましょう。
@@ -241,7 +250,7 @@ and publish them with firebase deploy.
 ? What file should be used for Firestore indexes? (firestore.indexes.json)
 //}
 
-
+最後はFirebase Hostingの設定です。
 
 //cmd{
 === Hosting Setup
