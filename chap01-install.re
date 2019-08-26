@@ -85,7 +85,7 @@ Googleのログインが求められると思うので自分のGoogleアカウ�
 //image[firebase_completed][Firebaseのプロジェクト作成完了]{
 //}
 
-@<img>[firebase_completed] が出ればfirebaseのプロジェクト作成が完了です！
+@<img>{firebase_completed} が出ればfirebaseのプロジェクト作成が完了です！
 
 あとで、実際にNuxt.jsとも連携していきます！
 
@@ -143,6 +143,44 @@ create-nuxt-app v2.9.2
 ==== Nuxtのプロジェクトのカスタマイズ
 
 ===== nuxt-propety-decolatorを入れる
+
+パッケージとして追加で @<tt>{nuxt-property-decolator}を入れます。これは、Nuxtのコンポーネントのスタイルをclass構文と呼ばれる書き方に変えるための
+パッケージです。
+
+具体的には、次の通り、書き方が変わります。
+
+//list[before_prop][nuxt-property-decolatorを入れる前][JavaScript]{
+export const MyComponent = Vue.extend({
+  name: 'MyComponent',
+  components: { comp },
+  inject: {
+    foo: 'foo',
+    bar: 'bar',
+    [s]: s
+  },
+  model: {
+    prop: 'checked',
+    event: 'change'
+  },
+  props: {
+    checked: Boolean,
+    propA: Number,
+    propB: {
+      type: String,
+      default: 'default value'
+    },
+    propC: [String, Boolean],
+    propD: { type: null }
+  },
+  data () {
+    return {
+      foo: 'foo',
+      baz: 'bar'
+    }
+  }
+})
+//}
+
 
 
 
