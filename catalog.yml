@@ -4,9 +4,7 @@ PREDEF:
 CHAPS:
   - chap01-install.re
   - chap02-search.re
-  - chap03-sort.re
-  - chap04-heap.re
-  - chap05-dp.re
+  - chap03-search_app.re
 
 APPENDIX:
 
