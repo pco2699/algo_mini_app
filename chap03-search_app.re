@@ -158,7 +158,24 @@ test('test ticketGenerator', () => {
 @<code>{ticketGenerator}を動かした結果を比較しています。
 
 
-=== 
+=== searcher.js(線形探索)
+@<tt>{searcher.js}は線形探索、二分探索でそれぞれ分けて説明していきます。
+
+//list[?][searcher.js(線形探索)]{
+static linearSearch(tickets, target) {
+  const result = { count: 1, ticket: null }
+  tickets.forEach((ticket) => {
+    if (ticket.id === target) {
+      result.ticket = ticket
+      return result
+    }
+    result.count++
+  })
+  return null
+}
+//}
+
+@<tt>{linearSearch}は、@<tt>{tickets}と@<tt>{target}の２つの引数を取ります。
 
 
 
