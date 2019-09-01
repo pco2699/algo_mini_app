@@ -3,9 +3,7 @@
 == 書籍
 
 === なっとくアルゴリズム
-//table[nattoku][nattoku]{
-項目	内容
------------------------
+//table[][なっとくアルゴリズム]{
 著者	アディティア・Y・バーガバ (著), 株式会社クイープ (翻訳, 監修)
 URL	@<href>{https://www.amazon.co.jp/dp/B01N14WBX3/}
 //}
@@ -13,9 +11,7 @@ URL	@<href>{https://www.amazon.co.jp/dp/B01N14WBX3/}
 初心者でもわかりやすく、かつ動的計画法などのアルゴリズムまで網羅している素晴らしい書籍です
 
 === アルゴリズム図鑑
-//table[zukan][zukan]{
-項目	内容
------------------------
+//table[][アルゴリズム図鑑]{
 著者	石田 保輝、 宮崎 修一
 URL	@<href>{https://www.amazon.co.jp/dp/B01N14WBX3/}
 //}

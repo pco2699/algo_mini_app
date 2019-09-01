@@ -54,33 +54,33 @@ Firebaseは以下のページからサインアップできます。
 
 @<href>{https://firebase.google.com/?hl=ja}
 
-//image[firebase_signup][Firebaseのトップページ]{
+//image[firebase_signup][Firebaseのトップページ][scale=0.8]{
 //}
 
 「使ってみよう」ボタンを押しましょう。
 
-//image[google_login][Googleのログイン]{
+//image[google_login][Googleのログイン][scale=0.8]{
 //}
 
 Googleのログインが求められると思うので自分のGoogleアカウントでログインしましょう。
 
-//image[firebase_project][Firebaseのプロジェクト作成]{
+//image[firebase_project][Firebaseのプロジェクト作成][scale=0.8]{
 //}
 
 「プロジェクトを追加」でプロジェクトを追加しましょう。
 
-//image[firebase_project_start][Firebaseのプロジェクトの名前]{
+//image[firebase_project_start][Firebaseのプロジェクトの名前][scale=0.8]{
 //}
 
 「プロジェクトの名前」を聞かれるので適当に「algo-mini-app」とか入力しましょう。
 
-//image[firebase_project_start2][Firebaseのアナリティクスの利用有無]{
+//image[firebase_project_start2][Firebaseのアナリティクスの利用有無][scale=0.8]{
 //}
 
 アナリティクスの利用有無を聞かれるので「なし」と答えましょう。
 （今回はもちろん、利用しません。）
 
-//image[firebase_completed][Firebaseのプロジェクト作成完了]{
+//image[firebase_completed][Firebaseのプロジェクト作成完了][scale=0.8]{
 //}
 
 @<img>{firebase_completed} が出ればfirebaseのプロジェクト作成が完了です！
@@ -147,27 +147,8 @@ create-nuxt-app v2.9.2
 
 //list[before_prop][nuxt-property-decolatorを入れる前][JavaScript]{
 export const MyComponent = Vue.extend({
-  name: 'MyComponent',
-  components: { comp },
-  inject: {
-    foo: 'foo',
-    bar: 'bar',
-    [s]: s
-  },
-  model: {
-    prop: 'checked',
-    event: 'change'
-  },
   props: {
     checked: Boolean,
-    propA: Number,
-    propB: {
-      type: String,
-      default: 'default value'
-    },
-    propC: [String, Boolean],
-    propD: { type: null }
-  },
   data () {
     return {
       foo: 'foo',
@@ -178,6 +159,8 @@ export const MyComponent = Vue.extend({
 //}
 
 @<tt>{nuxt-property-decolator}
+
+#@# TODO: nuxtのVuetify設定やpropertyの残りなどを追記する。
 
 === Nuxt.jsとFirebaseの連携設定
 
