@@ -5,8 +5,10 @@ CHAPS:
   - chap01-install.re
   - chap02-search.re
   - chap03-search_app.re
-
-APPENDIX:
+  - chap04-search_app_advanced.re
 
 POSTDEF:
   - chap99-afterword.re
+
+APPENDIX:
+  - appendix-recommended.re
