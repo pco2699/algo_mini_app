@@ -21,8 +21,6 @@ Firebaseを利用することで、難しかったインフラ構築やサーバ
 
 サクッと一人で、コストも抑えてWebアプリを作るため、Firebaseを今回は採用することにしました。
 
-
-
 === Firebase Hosting
 
 Firebase HostingはFirebaseのサービスの一つで、HTMLやCSS、JSなどの静的ファイルをホスティングするためのサービスです。
@@ -140,15 +138,18 @@ create-nuxt-app v2.9.2
 
 ==== Nuxtのプロジェクトのカスタマイズ
 
-パッケージとして追加で @<tt>{nuxt-property-decolator}を入れます。これは、Nuxtのコンポーネントのスタイルをclass構文と呼ばれる書き方に変えるための
+===== nuxt-propety-decolatorの追加@<br>{}
+
+パッケージとして追加で @<href>{https://github.com/nuxt-community/nuxt-property-decorator, nuxt-property-decolator}@<fn>{prop_deco}を入れます。これは、Nuxtのコンポーネントのスタイルをclass構文と呼ばれる書き方に変えるための
 パッケージです。
 
-具体的には、次の通り、書き方が変わります。
+具体的には、次の通り、クラス構文を使ってVueのコンポーネントを組み立てることができるようになります。
 
-//list[before_prop][nuxt-property-decolatorを入れる前][JavaScript]{
+//list[before_prop][nuxt-property-decolatorを入れる前][javascript]{
 export const MyComponent = Vue.extend({
   props: {
-    checked: Boolean,
+    propA: Number
+  },
   data () {
     return {
       foo: 'foo',
@@ -158,7 +159,74 @@ export const MyComponent = Vue.extend({
 })
 //}
 
-@<tt>{nuxt-property-decolator}
+//list[after_prop][nuxt-property-decolatorを入れた後][javascript]{
+import { Component, Prop, Provide } from 'nuxt-property-decorator'
+@Component()
+export class MyComponent extends Vue {
+
+  @Prop()
+  propA!: number
+
+  @Provide() foo = 'foo'
+  @Provide('bar') baz = 'bar'
+ 
+}
+//}
+
+@<tt>{nuxt-property-decorator}は次のコマンドで追加してください。
+
+//terminal[][nuxt-property-decoraterのインストール]{
+$ pwd # プロジェクトの直下にいることを確認
+$ npm install nuxt-property-decorator
+//}
+
+//footnote[prop_deco][https://github.com/nuxt-community/nuxt-property-decorator]
+
+
+===== babelの設定の追加@<br>{}
+
+@<tt>{nuxt-propety-decorator}を動かすためにbabelというコンパイラのエラーの抑制するため、設定の追加が必要になります。
+@<tt>{nuxt.config.js}に次の内容を追記しましょう。
+
+//list[?][nuxt.config.jsに設定を追記][javascript]{
+  build: {
+    babel: {
+      plugins: [
+        ["@babel/plugin-proposal-decorators", { legacy: true }],
+        ["@babel/plugin-proposal-class-properties", { loose: true }]
+      ]
+    }
+  }
+//}
+
+===== Vuetifyのテーマ色の設定@<br>{}
+
+今回、VuetifyというUIフレームワークを利用して、画面を作っていきます。
+まず、基本色を設定してしまいましょう。基本色は@<tt>{nuxt.config.js}で設定できます。
+
+次のように設定していますが、好きな色に設定してみてください。
+@<href>{https://theme-generator.vuetifyjs.com/, Vuetify Theme Generator}というサイトで、実際に色を見ながら、テーマ色を設定することも出来ます。
+
+//list[?][nuxt.config.jsにVuetifyのテーマを設定][javascript]{
+  vuetify: {
+    customVariables: ['~/assets/style/variables.scss'],
+    theme: {
+      light: true,
+      themes: {
+        light: {
+          primary: '#2196f3',
+          secondary: '#03a9f4',
+          accent: '#e91e63',
+          error: '#ff5722',
+          warning: '#ff9800',
+          info: '#009688',
+          success: '#00bcd4'
+        }
+      }
+    }
+  },
+//}
+
 
 #@# TODO: nuxtのVuetify設定やpropertyの残りなどを追記する。
 

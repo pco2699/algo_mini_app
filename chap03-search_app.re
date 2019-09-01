@@ -127,7 +127,36 @@ const tickets = [
 
 動作確認のため、簡単なテストコードも書いておきましょう。ファイル名は@<tt>{search_util.test.js}です。
 
-次は、@<tt>{}
+//list[?][search_util.test.js][javascript]{
+import ticketGenerator from './search_util.js'
+
+test('test ticketGenerator', () => {
+  // ticketGeneratorを実際に動かして結果をresに入れる
+  const res = ticketGenerator(10)
+
+  // 想定されるチケットの配列を記載する
+  // contentsはランダムなので、検証を省略する
+  const expected = [
+    {
+      id: 1,
+      contents: ''
+    },
+    // (...以降、10回繰り返す)
+  ]
+
+  // さきほど作った想定チケットの配列とidが一致するか比較する
+  res.forEach((r, i) => {
+    expect(r.id).toEqual(expected[i].id)
+  })
+  // 結果の配列の長さが同じか検証する
+  expect(res.length).toEqual(10)
+})
+//}
+
+テストは@<tt>{Jest}というテストフレームワークを使ってかかれています。このように非常にシンプルに書くことができるのが特徴です。
+@<code>{test(fn)}でテストケースを定義します。 そして@<code>{expected}というチケットの想定配列を手でガリガリ書いて、
+@<code>{ticketGenerator}を動かした結果を比較しています。
+
 
 === 
 
