@@ -157,26 +157,164 @@ test('test ticketGenerator', () => {
 @<code>{test(fn)}でテストケースを定義します。 そして@<code>{expected}というチケットの想定配列を手でガリガリ書いて、
 @<code>{ticketGenerator}を動かした結果を比較しています。
 
+@<code>{expect(実際の値).toEqual(期待値)}という形で、実際の値と期待値を比較して同じであること確認します。
+
+テストを動かすのは極めて簡単で、次のコマンドをプロジェクト配下のどこかで打つだけです。
+//cmd{
+$ jest
+//}
+
+以下のように、PASSと出たらテストが通ったということです。おめでとうございます。
+もし通ってなかったらFAILという文字とともに差分がでると思うので、差分をもとに原因を特定して修正しましょう。
+//cmd{
+$ jest
+ PASS  modules/search/search_util.test.js
+//}
 
 === searcher.js(線形探索)
-@<tt>{searcher.js}は線形探索、二分探索でそれぞれ分けて説明していきます。
 
-//list[?][searcher.js(線形探索)]{
-static linearSearch(tickets, target) {
-  const result = { count: 1, ticket: null }
-  tickets.forEach((ticket) => {
-    if (ticket.id === target) {
-      result.ticket = ticket
-      return result
+@<tt>{searcher.js}は@<tt>{Searcher}というクラスに線形探索、二分探索のロジックをそれぞれ分けて書いています。
+クラスにまとめているのは、@<tt>{export}のときに取り扱いやすくするためだけなので、それぞれ別の関数にして、それぞれを@<tt>{export}してしまっても問題ないです。
+
+線形探索、二分探索でそれぞれ分けて説明していきましょう。
+まずは、線形探索からです。
+
+//list[?][searcher.js(線形探索)][javascript]{
+export default class Searcher {
+  static linearSearch(tickets, target) {
+    const result = { count: 1, ticket: null }
+    for (const ticket of tickets) {
+      if (ticket.id === target) {
+        result.ticket = ticket
+        return result
+      }
+      result.count++
     }
-    result.count++
-  })
-  return null
+    return null
+  }
 }
 //}
 
 @<tt>{linearSearch}は、@<tt>{tickets}と@<tt>{target}の２つの引数を取ります。
+@<tt>{tickets}は、さきほど作ったチケットの配列、@<tt>{target}は対象のチケットの番号です。
 
+まず、最初に、次の構造の結果を返す用のオブジェクトを作成しています。
+//list[?][結果を返すresultの構造][javascript]{
+  const result = {
+    count: 1 // 探すのにかかった回数(計算量)
+    ticket: null // 探し当てた対象のチケットの内容を格納
+  }
+//}
+
+次に、@<tt>{for of}で、チケットをすべて調べていきます。
+（線形探索は対象のチケットをすべて1から調べていくやり方でしたね。）
+
+@<tt>{for文}の中では、それぞれチケットが探している対象のものか一個ずつ番号/IDを比較しています。
+もし見つかったら、対象のチケットを@<tt>{result}に格納し、それを返します。もし見つからなければ@<tt>{null}を返すようにしています。
+
+ちなみに、計算量を返す必要がなく、純粋な線形探索を実装したい場合は、次のように、よりシンプルに書くことが出来ます。
+これは、@<tt>{find}という関数を使っています。
+
+//list[?][よりシンプルな線形探索][javascript]{
+static linearSearch(tickets, target) {
+  return tickets.find((ticket) => {
+    return ticket.id === target
+  })
+}
+//}
+
+
+同じようにこのロジックを軽く検証するテストコードを書いてみましょう。ファイル名は@<tt>{searcher.test.js}です。
+//list[?][線形探索のロジックを検証するテストコード][javascript]{
+import Searcher from './searcher.js'
+import ticketGenerator from './search_util'
+
+test('test linear search', () => {
+  const tickets = ticketGenerator(10)
+  const res = Searcher.linearSearch(tickets, 5)
+  expect(res).toEqual(expect.anything())
+  expect(res.ticket.id).toEqual(5)
+  expect(res.count).toEqual(5)
+})
+//}
+@<tt>{import}で線形探索のロジックを組み込んだ@<tt>{Searcher}と@<tt>{ticketGenerator}を呼んできます。
+@<tt>{ticketGenerator}の使い方は前に説明した通りです。@<code>{Searcher.linearSearch()}で、さきほど作った線形探索のロジックを呼び出すことができます。
+今回はチケット数 10で、チケット番号 5を探します。
+
+これで、さきほど説明したとおり、計算量と対象のチケットが格納されてくるはずです。なければ、@<tt>{null}が返ってくるはずです。
+そのため、とりあえず、見つかる=@<tt>{null}以外が返ってくる想定のため@<code>{expect.anything()}で@<tt>{null}以外のなにかを期待値として検証します。
+
+その後、IDと計算量を比較して、想定と同じかどうかを確認しています。
+
+=== searcher.js(二分探索)
+
+次は、二分探索を実装しましょう。
+
+//list[?][searcher.js(二分探索)][javascript]{
+export default class Searcher {
+  // 線形探索の後に追記しましょう
+  static binarySearch(tickets, target) {
+    if (tickets.length === 0) {
+      return null
+    }
+    const result = { count: 1, ticket: null }
+
+    let left = 0
+    let right = tickets.length - 1
+    while (left <= right) {
+      const mid = Math.floor((left + right) / 2)
+
+      if (tickets[mid].id === target) {
+        result.ticket = tickets[mid]
+        return result
+      } else if (tickets[mid].id < target) {
+        left = mid + 1
+      } else {
+        right = mid - 1
+      }
+      result.count++
+    }
+    return null
+  }
+
+//}
+
+引数などは線形探索と同じです。
+
+まず、最初に@<code>{tickets.length}が1以上かどうかを確認しています。0の場合、後で出てくる@<code>{let right = tickets.length - 1}で
+マイナスの値になってしまい、誤動作してしまうため、ここでチェックしています。
+
+次に@<tt>{left}と@<tt>{right}という２つの変数を定義しています。二分探索において、非常に重要な変数です。
+これは探索を行う範囲を決めるもので@<tt>{left}が範囲の左端、@<tt>{right}が範囲の右端を示します。
+
+次のようなイメージです。
+//image[binary_search_code_image][二分探索のコードイメージ][scale=1.0]{
+//}
+
+この@<tt>{left}と@<tt>{right}を使って、探索を繰り返していきます。
+
+繰り返す条件は@<code>{left <= right}である間です。@<tt>{=}は入っているので、@<tt>{left}と@<tt>{right}が同じの場合でも探索を行います。
+
+繰り返しの中ではまず、@<code>{const mid = Math.floor((left + right) / 2)}を計算しています。
+これは、左端と右端を足し合わせて2で割ることにより、範囲の真ん中を値を計算しています。
+@<code>{Math.floor()}をしている理由は、割り切れない場合、小数となってしまい、配列にアクセスすることが出来ないからです。
+@<code>{Math.floor()}で、小数を整数に切り下げを行うことができます。
+
+
+その後、@<tt>{mid}の値で、配列にアクセスしにいきます。@<code>{tickets[mid].id}で@<tt>{mid}に対応するIDを取得することができるので
+それが@<tt>{target}の値と一致するかどうかを確認します。
+もし、一致していたら@<kw>{目的の値が見つかった}ということなので、@<code>{result}に入れて関数を抜けます。
+
+見つからなかった場合、は@<tt>{tickets[mid].id}と@<tt>{target}の値を比較して、探索の範囲を決めます。
+探索の範囲の決め方は次の図の通りです。
+
+//image[binary_search_code_image2][二分探索のコードイメージ]{
+//}
+
+このようにして、@<tt>{left}、@<tt>{right}の値を更新し、これを繰り返していくことで二分探索を実装することができます。
+
+次にこの二分探索のコードをテストしてみましょう。
+@<tt>{searcher.test.js}に次の内容を追記しましょう。
 
 
 
