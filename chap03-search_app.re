@@ -1,6 +1,9 @@
 = 探索のアプリを作ろう
 
 では、この「探索」を用いてアプリを作っていきましょう。
+今回のアプリは @<href>{https://algo-mini-app.web.app/}にデプロイされているので確認してみてください。
+
+ソースコードは@<href>{https://github.com/pco2699/algo-mini-sample-app}にあります。
 
 == 「チケット検索アプリ」を作ろう
 
@@ -331,6 +334,215 @@ test('test binary search', () => {
 つづいて、画面を作っていきましょう。
 
 == 画面を作ろう
+画面のロジックが完成したので、次は画面を作っていきましょう。アルゴリズムとはあまり関係ないWEBよりの内容ではありますが
+もりもり画面ができていくのは楽しいですよ。
+
+=== Vuetifyの基本
+今回は、@<tt>{Vuetify} @<fn>{vuetify}というVue用のUIコンポーネントフレームワークを利用して、画面を作っていきます。
+UIコンポーネントフレームワークとは、使えそうなUIの部品を詰め込んだフレームワークで、それを呼び出すだけでキレイな画面を作ることができます。
+
+他の有名なUIコンポーネントフレームワークとしては、@<tt>{Bootstrap} @<fn>{bootstrap} などがあります。@<tt>{Bootstrap}は、皆さん一度使ったことあるのではないでしょうか。
+
+//footnote[vuetify][https://vuetifyjs.com/]
+//footnote[bootstrap][https://getbootstrap.com/]
+
+例えば@<img>{simple_button}を作る際には、@<list>{simple_button_code}のコードを書くだけでボタンを作ることができます。
+
+//image[simple_button][Vuetifyのシンプルなボタン]{
+//}
+
+//list[simple_button_code][シンプルなボタンのコード]{
+<template>
+  <div class="text-center">
+    <v-btn>Button</v-btn>
+  </div>
+</template>
+//}
+
+他にも、さまざまなコンポーネントがあるので、ぜひ@<href>{https://vuetifyjs.com/ja/components/api-explorer, 公式のドキュメント} @<fn>{vuetify_doc}を参照してみてください。
+
+//footnote[vuetify_doc][https://vuetifyjs.com/ja/components/api-explorer]
+
+=== 今回の画面構成
+今回のアプリの画面構成について、説明します。非常にシンプルです。
+
+ 1. ホーム画面
+ 2. 探索を行う画面
+
+==== 1. ホーム画面
+
+//image[homepage_of_app][ホーム画面]{
+//}
+簡易的なホーム画面を作ります。右にメニューがあり、「探索」を選択すると2.の「探索を行う画面」に移動することができます。
+この画面と全体のレイアウトについては、ソースコードの説明は省略しますので、気になる方はソースコードを見てみてください。
+
+
+==== 2. 探索を行う画面
+
+//image[search_screen_app][探索を行う画面]{
+//}
+
+探索を行うための項目を入力する画面です。今回はこの画面を作る方法をメインで解説していきます。
+
+=== 今回のディレクトリ構成
+
+実際に画面を作り始める前に、ディレクトリ構成・ファイル構成を説明します。
+
+//list[?][今回のファイル構成]{
+./
+├── pages
+│   ├── index.vue // 1. ホーム画面
+│   └── search.vue // 2. 探索を行う画面
+//}
+
+ホーム画面と探索を行う画面それぞれで@<tt>{.vue}ファイルを作ります。
+@<tt>{index.vue}については、前述の通り説明を割愛しますので、ソースコードを参照してみてください。
+
+Vue/Nuxt.jsはホントは、様々なUIコンポーネントを分割して自作することができるのが特徴ですが、今回はそこに拘わらず、シンプルに一つのファイルで画面を作っていきます。
+
+== 探索画面を実際に作ってみよう
+では、実際に探索を行う画面を作っていきましょう。
+
+
+まずは@<tt>{vue}ファイルをつくるところからです。
+とりあえず空のファイルを作ります。
+//cmd{
+$ cd pages
+$ touch search.vue
+//}
+
+次にエディタで次の通り@<tt>{vue}ファイルの下地をつくります。
+
+//list[?][vueファイルの下地][]{
+<template>
+/* ここにHTMLを記載します。 */
+</template>
+<script>
+// ここに処理をJavaScriptで記載します。
+</script>
+<style>
+/* ここにCSSでスタイルを記述します。(ただし今回はほぼ使わないので省略) */
+</style>
+}
+
+これでファイルができたので、それぞれの@<tt>{HTML}と@<tt>{JavaScript}について記載していきましょう。
+
+=== HTML部をつくろう
+まずは、@<tt>{HTML}部を作りましょう。さきほども言ったとおり、今回は@<tt>{Vuetify}を用いて作成します。
+@<img>{search_screen_app_explained})のイメージを頭に入れてHTMLを作っていきましょう。
+
+//image[search_screen_app_explained][探索画面の構成]{
+//}
+
+==== 全体
+まずは全体を@<tt>{div}で包みます。
+Vueのルールとして@<kw>{templateの下は必ず一つのタグ}がルールなので、このdivタグで包んであげます。
+他に、classとして@<kw>{text--center}、@<kw>{ms-10}を設定します。両方ともVuetifyで設定されているクラス属性です。
+
+@<kw>{text--center}はテキスト中央揃え、@<kw>{ms-10}は左右両方(side)に10のmarginを設けることを示しています。
+
+//list[?][HTML部 - 全体][html]{
+<template>
+  <div class="text--center ms-10">
+  </div>
+</template>
+//}
+
+==== フォーム
+入力する部分=フォームを作っていきます。
+まずは全体を@<tt>{v-form}で囲います。ここらへんはHTMLで@<tt>{form}タグで囲うのと全く同じ要領です。
+今回は実際には、POSTなどは行わないため、この@<tt>{v-form}タグは実は省略しても構いません。
+
+//list[?][HTML部 - 全体][html]{
+<template>
+  <div class="text--center ms-10">
+    <v-form>
+    </v-form>
+  </div>
+</template>
+//}
+
+==== テキストフィールド（チケット番号）
+チケット番号を入力するテキストフィールドを定義します。
+@<tt>{v-text-field}でテキストフィールドを定義することができます。
+
+@<tt>{v-model}で後述するJavaScriptで利用するモデルと紐付けを行います。
+@<tt>{ticketNumber}とモデルと紐付けを行います。
+
+また@<tt>{label}で実際に表示されるlabel名を指定します。
+
+//list[?][テキストフィールド][html]{
+<template>
+  // 今まで記載したものは省略
+  <v-form>
+    <v-text-field v-model="ticketNumber" label="チケット番号" />
+  </v-form>
+</template>
+//}
+
+==== スライダー(チケット数)
+チケット数を入力するスライダーを定義します。
+@<tt>{v-slider}でスライダーを定義することができます。
+
+@<tt>{thumb-label}の設定値に応じて、水玉のようなラベルを表示するか決めることができます。
+@<tt>{always}で常にラベルを表示、何も指定しない(=@<tt>{thumb-label}のみ)だとクリックやタッチした際にだけ
+ラベルを表示します。
+
+@<tt>{min}, @<tt>{max}, @<tt>{step}は、それぞれ数値の範囲を決めています。
+今回は、大きめの数字(1万)ぐらいまで見てみたいので、@<tt>{max}は1万に設定して@<tt>{step}も大きめに1000と設定しておきます。
+
+//list[?][スライダー][html]{
+<v-text-field />(詳しい内容は前述の通り)
+<v-slider
+  v-model="ticketAmount"
+  class="mt-7"
+  thumb-size="32"
+  thumb-label="always"
+  min="10"
+  max="10000"
+  step="1000"
+  label="チケット数"
+/>
+//}
+
+==== ラジオボタン(探索方法)
+探索方法を指定するラジオボタンを定義します。
+@<tt>{v-radio-group}でラジオボタンの集合を示すタグです。@<tt>{v-radio}はラジオボタンのそれぞれの項目に対応しています。
+
+@<tt>{v-radio-group}の@<tt>{row}属性は、ラジオボタンの並び方を決めます。@<tt>{row}ならば横並びです。
+
+@<tt>{v-radio}の@<tt>{value}は選択された際に@<tt>{v-model}に格納される値を記載します。
+
+//list[?][ラジオボタン][html]{
+<v-radio-group v-model="searchMethod" label="探索方法" row>
+  <v-radio label="線形探索" value="linear" />
+  <v-radio label="二分探索" value="binary" />
+</v-radio-group>
+//}
+
+==== エラー表示 & 検索ボタン
+さきほどの画面構成には含まれていませんでしたが、入力した数値がバリデーションにひっかかった場合にエラーを表示する場所も作っておきましょう。
+合わせて、検索ボタンも作ります。
+
+@<tt>{v-input}は、汎用的なインプットを作るためのコンポーネントですが今回はエラーメッセージを表示するために使っています。
+@<tt>{errors}というモデルと紐付けて使います。具体的な処理は、後述します。
+
+ボタンは@<tt>{v-btn}を使います。classに@<tt>{primary}と記載することで@<hd>{chap01-install|vuetify_theme}で設定した色を付与することができます。
+クリック時の動作は、@<tt>{@click}で付与することができます。この処理の内容はあとで説明します。
+
+//list[?][エラー表示 & 検索ボタン][html]{
+<v-input :error-count="errors.length" :error-messages="errors" />
+<v-btn class="primary" @click="checkForm() && execSearch()">
+  検索
+</v-btn>
+//}
+
+==== 結果表示
+
+
+
+
+
 
 
 

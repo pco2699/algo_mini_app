@@ -138,7 +138,7 @@ create-nuxt-app v2.9.2
 
 ==== Nuxtのプロジェクトのカスタマイズ
 
-===== nuxt-propety-decolatorの追加@<br>{}
+===== nuxt-propety-decolatorの追加
 
 パッケージとして追加で @<href>{https://github.com/nuxt-community/nuxt-property-decorator, nuxt-property-decolator}@<fn>{prop_deco}を入れます。これは、Nuxtのコンポーネントのスタイルをclass構文と呼ばれる書き方に変えるための
 パッケージです。
@@ -183,7 +183,7 @@ $ npm install nuxt-property-decorator
 //footnote[prop_deco][https://github.com/nuxt-community/nuxt-property-decorator]
 
 
-===== babelの設定の追加@<br>{}
+===== babelの設定の追加
 
 @<tt>{nuxt-propety-decorator}を動かすためにbabelというコンパイラのエラーの抑制するため、設定の追加が必要になります。
 @<tt>{nuxt.config.js}に次の内容を追記しましょう。
@@ -199,7 +199,7 @@ $ npm install nuxt-property-decorator
   }
 //}
 
-===== Vuetifyのテーマ色の設定@<br>{}
+====={vuetify_theme} Vuetifyのテーマ色の設定
 
 今回、VuetifyというUIフレームワークを利用して、画面を作っていきます。
 まず、基本色を設定してしまいましょう。基本色は@<tt>{nuxt.config.js}で設定できます。
