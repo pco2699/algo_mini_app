@@ -316,9 +316,22 @@ export default class Searcher {
 次にこの二分探索のコードをテストしてみましょう。
 @<tt>{searcher.test.js}に次の内容を追記しましょう。
 
+//list[?][searcher.test.js(二分探索)]{
+test('test binary search', () => {
+  const tickets = ticketGenerator(10)
+  const res = Searcher.binarySearch(tickets, 5)
+  expect(res).toEqual(expect.anything())
+  expect(res.ticket.id).toEqual(5)
+  expect(res.count).toEqual(1)
+})
+//}
 
-
+こちらは線形探索とほぼほぼ内容は同じです。ただし最後の@<tt>{res.count}は、計算量が異なるため注意してください。
+これで、一通り、ロジックを書くことができました。
+つづいて、画面を作っていきましょう。
 
 == 画面を作ろう
+
+
 
 == 動かしてみよう
