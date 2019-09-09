@@ -538,10 +538,191 @@ Vueのルールとして@<kw>{templateの下は必ず一つのタグ}がルー�
 //}
 
 ==== 結果表示
+最後に検索結果を表示できるようにしてみましょう。
+結果表示は、@<tt>{div}タグと@<tt>{v-card}を組み合わせて作っています。
 
+@<tt>{v-card}は、カード型のUIで、@<tt>{v-card-title}にはID(チケット番号)を、@<tt>{v-card-text}には、チケットの内容を表示しています。
 
+チケットが見つからなかった場合は、@<tt>{v-if}と@<tt>{v-else}を組み合わせて結果表示を変化させています。
 
+この結果表示の方法は後で詳しく解説します。
 
+//list[?][結果表示部分][html]{
+  ...省略
+  </v-form>
+  <div v-if="submitted" class="mt-2">
+    <div v-if="result">
+      <p>お探しのチケットが見つかりました！</p>
+      <v-card max-width="344" class="mx-auto">
+        <v-card-title>ID: {{ result.ticket.id }}</v-card-title>
+        <v-card-text>{{ result.ticket.content }}</v-card-text>
+      </v-card>
+      <p class="mt-2">探すのに{{ result.count }}回 かかりました！</p>
+    </div>
+    <div v-else>
+      <p>残念ながらチケットは見つかりませんでした...</p>
+    </div>
+  </div>
+</div>
+//}
+
+==== 画面を確認してみよう
+ここまでで、画面は完成したので実際にブラウザを立ち上げて画面を確認してみましょう。
+次のコマンドで画面を立ち上げることができます。
+//cmd{
+$ nuxt
+//}
+
+問題なく画面が見えたらOKです！もし何か問題があったら、エラーメッセージをもとにデバッグしてみてください。
+
+=== JS部をつくろう
+HTMLができたので、次はJSで処理を書いてみましょう。
+
+==== モデルを定義しよう
+まずは、JS部では、HTMLと紐付ける@<tt>{model}を定義します。ここで定義した@<tt>{model}はHTMLタグで@<tt>{v-model}で紐付けて利用します。
+モデルの定義は、二種類の書き方ができますので両方紹介します。
+
+JSも同じファイル(@<tt>{search.vue})に書きます。
+
+//list[?][モデル定義 その1][javascript]{
+import { Vue, Component } from 'nuxt-property-decorator'
+
+@Component
+export default class Search extends Vue {
+  constructor() {
+    super()
+
+    this.ticketNumber = ''
+    this.searchMethod = ''
+    this.ticketAmount = ''
+    this.submitted = false
+    this.result = null
+    this.errors = []
+  }
+}
+//}
+
+この書き方は、昨今のJavaScriptのスタンダードな書き方です。モデルをコンストラクタの中に書きます。
+
+//list[?][モデル定義 その1][javascript]{
+import { Vue, Component } from 'nuxt-property-decorator'
+
+@Component
+export default class Search extends Vue {
+  ticketNumber = ''
+  searchMethod = ''
+  ticketAmount = ''
+  submitted = false
+  result = null
+  errors = []
+}
+//}
+
+この書き方は、クラス内にモデルを定義します。JavaScriptだと新しい書き方なので、本来はコンパイルエラーになってしまいますが
+@<tt>{Nuxt.js}だと、標準で@<tt>{babel}というJavaScriptの新しい書き方を動くようにしてくれるコンパイラが自動で動くので、問題なく動きます。
+
+それぞれのモデルの意味は次の通りです。
+//table[nuxt_ver][nuxt_ver]{
+データ名	定義
+-----------------------
+ticketNumber	探索対象のチケット番号
+searchMethod	探索方法(二分探索/線形探索)
+ticketAmount	総チケット数
+submitted	フォームを送信したかを管理する
+result	探索の結果を格納する
+errors	フォームのバリデーションエラーを格納する
+//}
+
+==== 入力のバリデーションをつくろう
+
+まずは、入力したものについて簡単なバリデーションをつけてみましょう。
+入力された内容は@<tt>{Vue}のオートバインディングで、さきほど定義したモデルに入力内容が入っています。
+それをチェックするような処理を書いていけばOKです。
+
+//list[?][入力のバリデーション][javascript]{
+export default class Search extends Vue {
+  checkForm() {
+    this.errors = []
+    if (!this.ticketNumber) {
+      this.errors.push('チケット番号を入れてください')
+    } else if (!Search.validNumber(this.ticketNumber)) {
+      this.errors.push('チケット番号は数字で入れてください')
+    }
+
+    if (!this.searchMethod) {
+      this.errors.push('探索方法を入力してください')
+    }
+
+    if (this.ticketNumber < 0) {
+      this.errors.push('チケット番号は正の数を入力してください')
+    } else if (this.ticketNumber > this.ticketAmount) {
+      this.errors.push('チケット番号は、チケット数内で入力してください')
+    }
+
+    return !this.errors.length
+  }
+  static validNumber(num) {
+    const re = /[0-9]+/
+    return re.test(num)
+  }
+}
+//}
+
+@<tt>{checkForm()}のような形で、メソッドを書いていけば処理を書いていくことができます。
+@<tt>{checkForm()}内では、エラーの内容を管理する@<tt>{errors}という配列を宣言しており
+ここにエラーがあった場合、エラーメッセージを押し込んでいきます。
+
+さらに、各モデルの内容を精査して、エラーメッセージを突っ込んでいきます。
+例えば、次の処理はコメントの通りのバリデーションを行っています。
+
+//list[?][チケット番号のバリデーション][javascript]{
+if (this.ticketNumber < 0) { // チケット番号が正であるかのチェック
+  this.errors.push('チケット番号は正の数を入力してください')
+} else if (this.ticketNumber > this.ticketAmount) { // チケット番号がチケット数内であるかのチェック
+  this.errors.push('チケット番号は、チケット数内で入力してください')
+}
+//}
+
+これを繰り返して、エラーのバリデーションを行います。
+
+この@<tt>{checkForm()}は、HTMLで@<tt>{v-btn}の@<tt>{@click}に紐づけています。
+これで、ボタンを押すと、この@<tt>{checkForm()}が動くようになっています。
+
+@<tt>{@click}は@<code>{checkForm() && execSearch()}となっていますが
+これは@<tt>{checkForm()}の結果によって、@<tt>{execSearch()}を動かすかどうかを決めたいからです。
+
+@<tt>{checkForm()}が@<tt>{true}であれば、@<tt>{execSearch()}は動きますし
+逆に@<tt>{false}であれば動きません。
+
+==== 探索のロジックを組み込もう
+いよいよ最後に作った探索のロジックを組み込んで完成です。
+探索のロジックを@<tt>{import}で取り込むことで、画面に探索のロジックを組み込むことできます。
+
+そして@<tt>{execSearch()}というメソッドの中で、探索のロジックを呼び出すことで
+チケットを探索することができます。
+
+//list[?][探索のロジック組み込み][javascript]{
+import ticketGenerator from '../modules/search/search_util'
+import Searcher from '../modules/search/searcher'
+
+export default class Search extends Vue {
+  execSearch() {
+    const tickets = ticketGenerator(this.ticketAmount)
+    let result = null
+
+    if (this.searchMethod === 'binary') {
+      result = Searcher.binarySearch(tickets, Number(this.ticketNumber))
+    } else if (this.searchMethod === 'linear') {
+      result = Searcher.linearSearch(tickets, Number(this.ticketNumber))
+    }
+
+    if (result) {
+      this.result = result
+    }
+    this.submitted = true
+  }
+}
+//}
 
 
 
