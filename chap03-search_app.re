@@ -1,6 +1,6 @@
 = 探索のアプリを作ろう
 
-では、この「探索」を用いてアプリを作っていきましょう。
+この「探索」を用いてアプリを作っていきましょう。
 今回のアプリは @<href>{https://algo-mini-app.web.app/}にデプロイされているので確認してみてください。
 
 ソースコードは@<href>{https://github.com/pco2699/algo-mini-sample-app}にあります。
@@ -24,7 +24,7 @@
 //}
 
 == 今回のアプリの構成
-今回のアプリの構成・メインでいじっていくところを説明します。
+今回のアプリの構成・メインで開発するところを説明します。
 まず、ディレクトリ
 //list[?][Nuxtのディレクトリ]{
 .
@@ -41,7 +41,7 @@
 └── store
 //}
 
-今回は@<tt>{pages}の中でWebアプリのコードを記述していきます。
+@<tt>{pages}の中でWebアプリのコードを記述していきます。
 @<tt>{pages}の中には、デフォルトでファイルが入っていると思いますが、必要無いので、すべて削除してください。
 
 //terminal[][pageの中身を削除する]{
@@ -58,7 +58,7 @@ $ mkdir -p modules/search
 == 探索のコードを書こう
 
 まずは、探索のロジックを@<tt>{modules/search}配下に記載していきましょう。
-@<tt>{modules/search}配下では、探索のロジックに加えて、以下のロジックを書いていきます。
+@<tt>{modules/search}配下では、探索のロジックに加えて、次のロジックを書いていきます。
 
  1. チケットを自動生成するロジック
  2. 線形探索を行うロジック
@@ -120,11 +120,11 @@ const tickets = [
 配列の生成は、@<code>{Array()}と@<code>{fill()}と@<code>{map()}という関数を3つ 組み合わせています。
 @<code>{Array(num)}で@<tt>{num}分の配列の作成、@<code>{fill(null)}は配列生成のおまじない、@<code>{map(fn)}で実際に、配列の内容の構成を指定しています。
 
-配列の内容を構成する際に@<code>{id: i + 1}と指定しているのは、配列は0から付番されるのを1から始まるようにするためです。
+配列の内容を構成する際に@<code>{id: i + 1}と指定しているのは、0から付番されるのを1から始まるようにするためです。
 
 @<code>{contents}は、お遊び要素で、上部の指定されている@<tt>{contents}からチケットの内容をランダムで埋め込みます。@<fn>{ticket_contents}
 
-@<code>{export default ticketGenerator}で@<tt>{ticketGenerator}がこのファイル以外の外のモジュールからも利用出来るようになります。
+@<code>{export default ticketGenerator}で@<tt>{ticketGenerator}がこのファイル以外のモジュールからも利用出来るようになります。
 
 //footnote[ticket_contents][ちなみに、コンテンツの内容自体は著者の最近行った or 行きたかったコンサート or 適当なコンサート名です。]
 
@@ -156,7 +156,7 @@ test('test ticketGenerator', () => {
 })
 //}
 
-テストは@<tt>{Jest}というテストフレームワークを使ってかかれています。このように非常にシンプルに書くことができるのが特徴です。
+テストは@<tt>{Jest}というテストフレームワークを使って書かれています。非常にシンプルに書くことができるのが特徴です。
 @<code>{test(fn)}でテストケースを定義します。 そして@<code>{expected}というチケットの想定配列を手でガリガリ書いて、
 @<code>{ticketGenerator}を動かした結果を比較しています。
 
@@ -168,7 +168,7 @@ $ jest
 //}
 
 以下のように、PASSと出たらテストが通ったということです。おめでとうございます。
-もし通ってなかったらFAILという文字とともに差分がでると思うので、差分をもとに原因を特定して修正しましょう。
+もし通ってなかったらFAILという文字とともに差分が出力されると思うので、差分をもとに原因を特定して修正しましょう。
 //cmd{
 $ jest
  PASS  modules/search/search_util.test.js
@@ -176,11 +176,11 @@ $ jest
 
 === searcher.js(線形探索)
 
-@<tt>{searcher.js}は@<tt>{Searcher}というクラスに線形探索、二分探索のロジックをそれぞれ分けて書いています。
-クラスにまとめているのは、@<tt>{export}のときに取り扱いやすくするためだけなので、それぞれ別の関数にして、それぞれを@<tt>{export}してしまっても問題ないです。
-
 線形探索、二分探索でそれぞれ分けて説明していきましょう。
 まずは、線形探索からです。
+
+@<tt>{searcher.js}は@<tt>{Searcher}というクラスに線形探索、二分探索のロジックをそれぞれ分けて書いています。
+クラスにまとめているのは、@<tt>{export}のときに取り扱いやすくするためだけなので、それぞれ別の関数にして、それぞれを@<tt>{export}してしまっても問題ないです。
 
 //list[?][searcher.js(線形探索)][javascript]{
 export default class Searcher {
@@ -201,7 +201,7 @@ export default class Searcher {
 @<tt>{linearSearch}は、@<tt>{tickets}と@<tt>{target}の２つの引数を取ります。
 @<tt>{tickets}は、さきほど作ったチケットの配列、@<tt>{target}は対象のチケットの番号です。
 
-まず、最初に、次の構造の結果を返す用のオブジェクトを作成しています。
+まず、次の構造の結果を返す用のオブジェクトを作成しています。
 //list[?][結果を返すresultの構造][javascript]{
   const result = {
     count: 1 // 探すのにかかった回数(計算量)
@@ -209,10 +209,10 @@ export default class Searcher {
   }
 //}
 
-次に、@<tt>{for of}で、チケットをすべて調べていきます。
-（線形探索は対象のチケットをすべて1から調べていくやり方でしたね。）
+@<tt>{for of}で、チケットをすべて調べていきます。
+（線形探索は対象のチケットを1からすべて調べていくやり方でしたね。）
 
-@<tt>{for文}の中では、それぞれチケットが探している対象のものか一個ずつ番号/IDを比較しています。
+@<tt>{for of}の中では、それぞれチケットが探している対象のものか一個ずつ番号/IDを比較しています。
 もし見つかったら、対象のチケットを@<tt>{result}に格納し、それを返します。もし見つからなければ@<tt>{null}を返すようにしています。
 
 ちなみに、計算量を返す必要がなく、純粋な線形探索を実装したい場合は、次のように、よりシンプルに書くことが出来ます。
@@ -227,7 +227,7 @@ static linearSearch(tickets, target) {
 //}
 
 
-同じようにこのロジックを軽く検証するテストコードを書いてみましょう。ファイル名は@<tt>{searcher.test.js}です。
+このロジックを軽く検証するテストコードを書いてみましょう。ファイル名は@<tt>{searcher.test.js}です。
 //list[?][線形探索のロジックを検証するテストコード][javascript]{
 import Searcher from './searcher.js'
 import ticketGenerator from './search_util'
@@ -334,12 +334,12 @@ test('test binary search', () => {
 つづいて、画面を作っていきましょう。
 
 == 画面を作ろう
-画面のロジックが完成したので、次は画面を作っていきましょう。アルゴリズムとはあまり関係ないWEBよりの内容ではありますが
+探索のロジックが完成したので、次は画面を作っていきましょう。アルゴリズムとはあまり関係ないWEBの内容ではありますが、
 もりもり画面ができていくのは楽しいですよ。
 
 === Vuetifyの基本
 今回は、@<tt>{Vuetify} @<fn>{vuetify}というVue用のUIコンポーネントフレームワークを利用して、画面を作っていきます。
-UIコンポーネントフレームワークとは、使えそうなUIの部品を詰め込んだフレームワークで、それを呼び出すだけでキレイな画面を作ることができます。
+UIコンポーネントフレームワークとは、UIの部品を詰め込んだフレームワークで、呼び出すだけでキレイな画面を作ることができます。
 
 他の有名なUIコンポーネントフレームワークとしては、@<tt>{Bootstrap} @<fn>{bootstrap} などがあります。@<tt>{Bootstrap}は、皆さん一度使ったことあるのではないでしょうか。
 
@@ -398,14 +398,14 @@ UIコンポーネントフレームワークとは、使えそうなUIの部品�
 ホーム画面と探索を行う画面それぞれで@<tt>{.vue}ファイルを作ります。
 @<tt>{index.vue}については、前述の通り説明を割愛しますので、ソースコードを参照してみてください。
 
-Vue/Nuxt.jsはホントは、様々なUIコンポーネントを分割して自作することができるのが特徴ですが、今回はそこに拘わらず、シンプルに一つのファイルで画面を作っていきます。
+Vue/Nuxt.jsはホントは、様々なUIコンポーネントをファイルに分割して自作することができるのが特徴ですが、今回はそこに拘わらず、シンプルに一つのファイルで画面を作っていきます。
 
 == 探索画面を実際に作ってみよう
 では、実際に探索を行う画面を作っていきましょう。
 
 
 まずは@<tt>{vue}ファイルをつくるところからです。
-とりあえず空のファイルを作ります。
+まず空のファイルを作ります。
 //cmd{
 $ cd pages
 $ touch search.vue
@@ -424,6 +424,7 @@ $ touch search.vue
 /* ここにCSSでスタイルを記述します。(ただし今回はほぼ使わないので省略) */
 </style>
 }
+//}
 
 これでファイルができたので、それぞれの@<tt>{HTML}と@<tt>{JavaScript}について記載していきましょう。
 
@@ -621,9 +622,9 @@ export default class Search extends Vue {
 この書き方は、クラス内にモデルを定義します。JavaScriptだと新しい書き方なので、本来はコンパイルエラーになってしまいますが
 @<tt>{Nuxt.js}だと、標準で@<tt>{babel}というJavaScriptの新しい書き方を動くようにしてくれるコンパイラが自動で動くので、問題なく動きます。
 
-それぞれのモデルの意味は次の通りです。
-//table[nuxt_ver][nuxt_ver]{
-データ名	定義
+それぞれのモデルの意味は@<table>{model_definition}の通りです。
+//table[model_definition][モデルの定義]{
+モデル名	定義
 -----------------------
 ticketNumber	探索対象のチケット番号
 searchMethod	探索方法(二分探索/線形探索)
@@ -700,12 +701,21 @@ if (this.ticketNumber < 0) { // チケット番号が正であるかのチェッ
 
 そして@<tt>{execSearch()}というメソッドの中で、探索のロジックを呼び出すことで
 チケットを探索することができます。
+@<tt>{execSearch()}の中では、@<tt>{searchMethod}の内容に応じて二分探索か線形探索か、どちらのロジックを呼び出すか決めています。
+
+ロジックを呼び出す際の注意点として、@<tt>{ticketNumber}を@<tt>{Number()}で、数字に変換するようにしてください。
+そうしないとロジックがうまく動きません。
+
+最後に、@<tt>{submitted}というモデルを@<tt>{true}にすることで、HTMLの方で結果表示されるようにします。
+これで、画面には「チケットが見つかりました！」か「チケットが見つかりませんでした」のどちらかが表示されるはずです。
 
 //list[?][探索のロジック組み込み][javascript]{
+// ...省略
 import ticketGenerator from '../modules/search/search_util'
 import Searcher from '../modules/search/searcher'
 
 export default class Search extends Vue {
+  // ...省略
   execSearch() {
     const tickets = ticketGenerator(this.ticketAmount)
     let result = null
@@ -724,7 +734,80 @@ export default class Search extends Vue {
 }
 //}
 
+これで、動かしてみて問題なく動けば無事にアプリが完成です！
 
+== firebaseを用いてネットに公開しよう！
+最後に、firebase hostingを使って、作ったアプリを公開してみましょう！
+実に簡単な方法で、firebase hostingで公開することができます。
 
+=== Nuxt.jsで静的ファイルを生成しよう
+Nuxt.jsは、簡単に静的ファイルを生成できるのが特徴です。
+次のコマンドで静的ファイルを生成してみましょう。
 
-== 動かしてみよう
+//cmd{
+$ npm run generate
+//}
+
+@<list>{nuxt_generate}の通り、表示されればOKです。
+
+//list[nuxt_generate][Nuxtでのgenerateの様子]{
+$ npm run generate
+
+> algo_mini_sample_app@1.0.0 generate C:\dev\algo-mini-sample-app
+> nuxt generate
+
+i Production build                                21:03:39
+√ Builder initialized                             21:03:40
+√ Nuxt files generated                            21:03:40
+
+√ Client
+  Compiled successfully in 20.66s
+
+√ Server
+  Compiled successfully in 12.02s
+
+(...省略)
+
+Entrypoint app = server.js server.js.map
+i Generating pages                                21:04:16
+√ Generated /search                               21:04:18
+√ Generated /  
+//}
+
+@<tt>{dist}フォルダに静的ファイルが生成されます。
+
+=== Firebaseにデプロイしよう
+この@<tt>{dist}フォルダに生成された静的ファイルを、Firebase Hostingにデプロイしてみましょう。
+コマンドはいたって簡単です。
+
+//cmd{
+$ firebase deploy
+//}
+
+@<list>{firebase_deploy}の通り表示されればOKです。
+
+//list[firebase_deploy][firebaseへのデプロイ]{
+
+=== Deploying to 'algo-mini-app'...
+
+i  deploying firestore, hosting
+i  firestore: checking firestore.rules for compilation errors...
++  firestore: rules file firestore.rules compiled successfully
+i  firestore: uploading rules firestore.rules...
+i  hosting: found 26 files in public directory
++  hosting: file upload complete
++  firestore: released rules firestore.rules to cloud.firestore
+i  hosting: finalizing version...
++  hosting: version finalized
+i  hosting: releasing new version...
++  hosting: release complete
+
++  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/algo-mini-app/overview
+Hosting URL: https://algo-mini-app.firebaseapp.com
+
+//}
+
+表示された@<tt>{Hosting URL}にアクセスしてみて表示されるか確認してみましょう。
+無事に表示されていたら、デプロイも完了です。おめでとうございます。

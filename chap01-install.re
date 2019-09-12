@@ -27,8 +27,6 @@ Firebase HostingはFirebaseのサービスの一つで、HTMLやCSS、JSなど�
 PHPやJava, Pythonなどはもちろん動きませんが、後述する「静的サイトジェネレーター」を組み合わせることで、フロントエンドフレームワークで作成された
 ファイルをデプロイすることができます。
 
-コストも抑えることができるので、個人開発などにおすすめです。
-
 === Cloud Firestore
 
 データの永続化を行うDBです。Webサービスだと @<tt>{MySQL}や@<tt>{PostgreSQL}などのRDB(リレーショナル・データベース)が使われることが多いですが
@@ -37,10 +35,10 @@ PHPやJava, Pythonなどはもちろん動きませんが、後述する「静�
 NoSQLでスキーマレスなので、データベースのスキーマ定義などがなかったり、途中でデータ追加したい！となっても、データを追加したりできるのが便利な点です。
 
 === Nuxt.js
-今回、Nuxt.jsと呼ばれるフロントエンドフレームワークを用いて、Webサービスを作成します。Nuxt.jsはVue.jsと呼ばれるフレームワークはベースになっており
+Nuxt.jsと呼ばれるフロントエンドフレームワークを用いて、Webサービスを作成します。Nuxt.jsはVue.jsと呼ばれるフレームワークがベースになっており
 HTML/CSSが理解できていれば、非常に理解しやすく扱いやすいフロントエンドフレームワークです。
 
-Nuxt.jsには「静的サイトジェネレーター」の機能もあり、これを用いて、生成されたHTML/CSSなどを firebase hostingにデプロイすることで
+Nuxt.jsには「静的サイトジェネレーター」の機能もあり、これを用いて、生成されたHTML/CSSなどを Firebase Hostingにデプロイすることで
 今回のWebアプリを作っていきます。
 
 == 環境をつくろう
@@ -70,29 +68,27 @@ Googleのログインが求められると思うので自分のGoogleアカウ�
 //image[firebase_project_start][Firebaseのプロジェクトの名前][scale=0.8]{
 //}
 
-「プロジェクトの名前」を聞かれるので適当に「algo-mini-app」とか入力しましょう。
+「プロジェクトの名前」を聞かれるので適当に「algo-mini-app」と入力しましょう。
 
 //image[firebase_project_start2][Firebaseのアナリティクスの利用有無][scale=0.8]{
 //}
 
 アナリティクスの利用有無を聞かれるので「なし」と答えましょう。
-（今回はもちろん、利用しません。）
 
 //image[firebase_completed][Firebaseのプロジェクト作成完了][scale=0.8]{
 //}
 
 @<img>{firebase_completed} が出ればfirebaseのプロジェクト作成が完了です！
 
-あとで、実際にNuxt.jsとも連携していきます！
+あとで、Nuxt.jsとも連携していきます！
 
 === Nuxt.jsの導入
 
 ==== 本書でのバージョン
 
-本書では、以下のバージョンでNuxt.jsなどを動かします。
-必要に応じてVerをあわせましょう。
+本書では、次のバージョンでNuxt.jsを動かします。
 
-//table[nuxt_ver][nuxt_ver]{
+//table[nuxt_ver][Nuxtのバージョン]{
 プロダクト名	バージョン
 -----------------------
 Nuxt.js	2.8.1
@@ -100,14 +96,14 @@ Node.js	10.14
 Vuetify	2.0.5
 //}
 
-==== Nuxtの初期プロジェクト作成
+==== Nuxt.jsの初期プロジェクト作成
 
-Nuxtを動かすには、Node.jsの動作環境が必要です。
+Nuxt.jsを動かすには、Node.jsの動作環境が必要です。
 本書では、Node.jsの環境構築の手順は省略しますのでネットで検索して、Node.jsの環境構築をお願いします。
 
 Nuxtの初期プロジェクトは @<tt>{create-nuxt-app} というコマンドを利用して構築すると簡単です。
-Node.jsのバージョンが10系であれば、更に @<tt>{npx}というコマンドが使えるのでそれを組み合わせて
-コンソールで以下の内容を入力しましょう。
+Node.jsのバージョンが10系であれば、 @<tt>{npx}というコマンドが使えるのでそれを組み合わせて
+コンソールで次の内容を入力しましょう。
 
 //cmd{
 $ npx create-nuxt-app
@@ -132,7 +128,7 @@ create-nuxt-app v2.9.2
 ? Choose rendering mode Universal (SSR) // レンダリングの方式を指定します。今回はUniversalを指定します。
 //}
 
-これで Nuxtのプロジェクトができました。
+これで Nuxt.jsのプロジェクトができました。
 
 あとは、個人的な好みで細かいカスタマイズを入れておきます。
 
@@ -140,10 +136,10 @@ create-nuxt-app v2.9.2
 
 ===== nuxt-propety-decolatorの追加
 
-パッケージとして追加で @<href>{https://github.com/nuxt-community/nuxt-property-decorator, nuxt-property-decolator}@<fn>{prop_deco}を入れます。これは、Nuxtのコンポーネントのスタイルをclass構文と呼ばれる書き方に変えるための
+パッケージとして追加で @<href>{https://github.com/nuxt-community/nuxt-property-decorator, nuxt-property-decolator}@<fn>{prop_deco}を入れます。これは、Nuxt.jsのコンポーネントのスタイルをclass構文と呼ばれる書き方に変えるための
 パッケージです。
 
-具体的には、次の通り、クラス構文を使ってVueのコンポーネントを組み立てることができるようになります。
+次の通り、クラス構文を使ってVueのコンポーネントを組み立てることができるようになります。
 
 //list[before_prop][nuxt-property-decolatorを入れる前][javascript]{
 export const MyComponent = Vue.extend({
@@ -185,7 +181,7 @@ $ npm install nuxt-property-decorator
 
 ===== babelの設定の追加
 
-@<tt>{nuxt-propety-decorator}を動かすためにbabelというコンパイラのエラーの抑制するため、設定の追加が必要になります。
+@<tt>{nuxt-propety-decorator}を動かすためにbabelというコンパイラのエラーの抑制するための設定の追加が必要になります。
 @<tt>{nuxt.config.js}に次の内容を追記しましょう。
 
 //list[?][nuxt.config.jsに設定を追記][javascript]{
@@ -205,7 +201,7 @@ $ npm install nuxt-property-decorator
 まず、基本色を設定してしまいましょう。基本色は@<tt>{nuxt.config.js}で設定できます。
 
 次のように設定していますが、好きな色に設定してみてください。
-@<href>{https://theme-generator.vuetifyjs.com/, Vuetify Theme Generator}というサイトで、実際に色を見ながら、テーマ色を設定することも出来ます。
+@<href>{https://theme-generator.vuetifyjs.com/, Vuetify Theme Generator} @<fn>{vuetify_theme}というサイトで、実際に色を見ながら、テーマ色を設定することも出来ます。
 
 //list[?][nuxt.config.jsにVuetifyのテーマを設定][javascript]{
   vuetify: {
@@ -227,8 +223,7 @@ $ npm install nuxt-property-decorator
   },
 //}
 
-
-#@# TODO: nuxtのVuetify設定やpropertyの残りなどを追記する。
+//footnote[vuetify_theme][https://theme-generator.vuetifyjs.com/]
 
 === Nuxt.jsとFirebaseの連携設定
 
@@ -334,6 +329,8 @@ and publish them with firebase deploy.
 //}
 
 最後はFirebase Hostingの設定です。
+後章でも説明しますが、Nuxt.jsの生成される静的ファイルをデプロイしたいため
+@<tt>{dist}というディレクトリ名を必ず指定してください。
 
 //cmd{
 === Hosting Setup
@@ -346,3 +343,4 @@ have a build process for your assets, use your build's output directory.
 ? Configure as a single-page app (rewrite all urls to /index.html)? No
 //}
 
+これで環境構築が完了しました。

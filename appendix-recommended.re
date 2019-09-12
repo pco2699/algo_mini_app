@@ -30,3 +30,24 @@ URL	@<href>{https://www.amazon.co.jp/dp/4873118433}
 
 == Webサイト
 
+こちらも競技プログラミングやコーディング面接対策用のWebサイトではなく
+アルゴリズムを簡単に学習できるWebサイトを中心に紹介します。
+
+=== VisuAlgo
+//table[][VisuAlgo]{
+URL	@<href>{https://visualgo.net/ja}
+//}
+アルゴリズムの可視化サイト。
+英語ではあるけど、ポップな色使いでソートを始め幅広いアルゴリズムを学べるのが特徴。
+
+=== Algorithm Visualizer
+//table[][Algorithm Visualizer]{
+URL	@<href>{https://algorithm-visualizer.org}
+//}
+VisuAlgoと似たコンセプトのアルゴリズム可視化サービス。こちらも英語。
+なかなかストイックな見た目をしているが、めちゃめちゃぬるさくでわかりやすい。
+
+しかもAPIが公開されており、オンライン上で、自分で可視化できる。
+
+
+
