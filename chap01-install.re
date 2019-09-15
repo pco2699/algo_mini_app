@@ -140,6 +140,7 @@ create-nuxt-app v2.9.2
 
 パッケージとして追加で @<href>{https://github.com/nuxt-community/nuxt-property-decorator, nuxt-property-decolator}@<fn>{prop_deco}を入れます。
 これは、Nuxt.jsのコンポーネントのスタイルをクラス構文書けるようにするためのパッケージです。
+#@# クラス構文書ける、になっている
 
 次の通り、クラス構文を使ってVueのコンポーネントを組み立てることができるようになります。
 
@@ -184,6 +185,7 @@ $ npm install nuxt-property-decorator
 ===== babelの設定の追加
 
 @<tt>{nuxt-propety-decorator}を動かすためにbabelというコンパイラのエラーの抑制するための設定の追加が必要になります。
+#@# ちょっと一瞬分かりづらかった。babelはつまりなに？と一瞬なった
 @<tt>{nuxt.config.js}に次の内容を追記しましょう。
 
 //list[?][nuxt.config.jsに設定を追記][javascript]{
@@ -204,6 +206,7 @@ $ npm install nuxt-property-decorator
 
 次のように設定していますが、好きな色に設定してみてください。
 @<href>{https://theme-generator.vuetifyjs.com/, Vuetify Theme Generator} @<fn>{vuetify_theme}というサイトで、実際に色を見ながら、基本色を設定することも出来ます。
+#@# この情報ひじょうにうれしみ
 
 //list[?][nuxt.config.jsにVuetifyの基本色を設定][javascript]{
   vuetify: {
@@ -254,6 +257,7 @@ $ firebase login
 
 NuxtプロジェクトにFirebaseを設定します。
 さきほどNuxtのプロジェクトで次のコマンドを打ちます。
+#@# さきほどNuxt 「の」がほしい
 
 //cmd{
 $ cd {Nuxtのプロジェクトを作ったディレクトリ}
@@ -346,3 +350,4 @@ have a build process for your assets, use your build's output directory.
 //}
 
 これで環境構築が完了しました。
+#@# 全体的にわかりにくいところはなくサクサク進めていける感がありYOKATTA
