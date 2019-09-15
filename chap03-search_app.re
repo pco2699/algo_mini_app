@@ -293,7 +293,6 @@ export default class Searcher {
 次に@<tt>{left}と@<tt>{right}という２つの変数を定義しています。二分探索において、非常に重要な変数です。
 これは探索を行う範囲を決めるもので@<tt>{left}が範囲の左端、@<tt>{right}が範囲の右端を示します。
 
-次のようなイメージです。
 //image[binary_search_code_image][二分探索のコードイメージ][scale=1.0]{
 //}
 
@@ -312,7 +311,7 @@ export default class Searcher {
 もし、一致していたら@<kw>{目的の値が見つかった}ということなので、@<code>{result}に入れて関数を抜けます。
 
 見つからなかった場合、は@<tt>{tickets[mid].id}と@<tt>{target}の値を比較して、探索の範囲を決めます。
-探索の範囲の決め方は次の図の通りです。
+探索の範囲の決め方は@<img>{binary_search_code_image2}の通りです。
 
 //image[binary_search_code_image2][二分探索のコードイメージ]{
 //}
