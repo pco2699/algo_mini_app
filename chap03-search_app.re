@@ -337,7 +337,7 @@ test('test binary search', () => {
 つづいて、画面を作っていきましょう。
 
 == 画面を作ろう
-探索のロジックが完成したので、次は画面を作っていきましょう。アルゴリズムとはあまり関係ないWEBの内容ではありますが、
+探索のロジックが完成したので、次は画面を作っていきましょう。アルゴリズムとは関係ないWebの内容ではありますが、
 もりもり画面ができていくのは楽しいですよ。
 
 === Vuetifyの基本
@@ -601,12 +601,12 @@ $ nuxt
 
 問題なく画面が見えたらOKです！もし何か問題があったら、エラーメッセージをもとにデバッグしてみてみましょう。
 
-=== JS部をつくろう
-HTMLができたので、次はJSで処理を書いてみましょう。
+=== JavaScript部をつくろう
+HTMLができたので、次はJavaScriptで処理を書いてみましょう。
 
 ==== モデルを定義しよう
-まず、JS部では、HTMLと紐付ける@<tt>{model}を定義します。定義した@<tt>{model}はHTML部において@<tt>{v-model}で紐付けて利用します。
-JSも同じファイル(@<tt>{search.vue})に書きます。
+まず、JavaScript部では、HTMLと紐付ける@<tt>{model}を定義します。定義した@<tt>{model}はHTML部において@<tt>{v-model}で紐付けて利用します。
+この処理も同じファイル(@<tt>{search.vue})に書きます。
 
 //list[?][モデル定義][javascript]{
 import { Vue, Component } from 'nuxt-property-decorator'
@@ -741,8 +741,8 @@ export default class Search extends Vue {
 これで、動かしてみて問題なく動けば無事にアプリが完成です！
 
 == Firebaseを用いてネットに公開しよう！
-最後に、firebase hostingを使って、作ったアプリを公開してみましょう！
-実に簡単な方法で、firebase hostingで公開できます。
+最後に、Firebase Hostingを使って、作ったアプリを公開してみましょう！
+実に簡単な方法で、Firebase Hostingで公開できます。
 
 === Nuxt.jsで静的ファイルを生成しよう
 Nuxt.jsは、簡単に静的ファイルを生成できるのが特徴です。
@@ -790,7 +790,7 @@ $ firebase deploy
 
 @<list>{firebase_deploy}の通り表示されればOKです。
 
-//list[firebase_deploy][firebaseへのデプロイ]{
+//list[firebase_deploy][Firebaseへのデプロイ]{
 
 === Deploying to 'algo-mini-app'...
 

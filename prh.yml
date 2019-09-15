@@ -1,0 +1,9 @@
+version: 1
+rules:
+  - expected: Firebase
+  - expected: Firebase Hosting
+  - expected: JavaScript
+  - expected: LeetCode
+  - expected: Web
+  - expected: JavaScript
+    pattern: JS
