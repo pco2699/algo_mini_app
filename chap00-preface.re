@@ -81,7 +81,22 @@ i番目の配列がi日目の株の値段を表す配列があります。
 このアルゴリズムの問題は非常に有名ですが、入力は配列で、出力は一つの値です。
 実際に、コードを書いてみると以下のような出力になると思います。
 つまりアルゴリズムの問題で出されたり、書くコードは
-コマンドラインツールなどの入出力に近いものになります。
+コマンドラインツールなどの入出力に近いものになります。(@<list>{answer_of_algo})
+
+//list[answer_of_algo][問題への回答(Python)][python]{
+import sys
+
+class Solution:
+    // インプットはintの配列
+    def maxProfit(self, prices: List[int]) -> int:
+        lowestPrice = sys.maxsize
+        maxProfit = 0
+        for p in prices:
+            lowestPrice = min(lowestPrice, p)
+            maxProfit = max(maxProfit, p - lowestPrice)
+        // 出力は一つのint
+        return maxProfit
+//}
 
 実際、ほとんどのアルゴリズムの本でも、こうした形式を取っています。
 こうした本はもちろんとても良い教材ですし、大変、お世話になりました。
