@@ -48,7 +48,7 @@ Nuxt.jsには「静的サイトジェネレーター」の機能もあり、こ�
 === Firebaseへのサインアップ
 
 まずは、Firebaseへサインアップを行いましょう。
-Firebaseは以下のページからサインアップできます。
+Firebaseは次のページからサインアップできます。
 
 @<href>{https://firebase.google.com/?hl=ja}
 
@@ -138,8 +138,8 @@ create-nuxt-app v2.9.2
 
 ===== nuxt-propety-decolatorの追加
 
-パッケージとして追加で @<href>{https://github.com/nuxt-community/nuxt-property-decorator, nuxt-property-decolator}@<fn>{prop_deco}を入れます。これは、Nuxt.jsのコンポーネントのスタイルをclass構文と呼ばれる書き方に変えるための
-パッケージです。
+パッケージとして追加で @<href>{https://github.com/nuxt-community/nuxt-property-decorator, nuxt-property-decolator}@<fn>{prop_deco}を入れます。
+これは、Nuxt.jsのコンポーネントのスタイルをクラス構文書けるようにするためのパッケージです。
 
 次の通り、クラス構文を使ってVueのコンポーネントを組み立てることができるようになります。
 
@@ -203,9 +203,9 @@ $ npm install nuxt-property-decorator
 まず、基本色を設定してしまいましょう。基本色は@<tt>{nuxt.config.js}で設定できます。
 
 次のように設定していますが、好きな色に設定してみてください。
-@<href>{https://theme-generator.vuetifyjs.com/, Vuetify Theme Generator} @<fn>{vuetify_theme}というサイトで、実際に色を見ながら、テーマ色を設定することも出来ます。
+@<href>{https://theme-generator.vuetifyjs.com/, Vuetify Theme Generator} @<fn>{vuetify_theme}というサイトで、実際に色を見ながら、基本色を設定することも出来ます。
 
-//list[?][nuxt.config.jsにVuetifyのテーマを設定][javascript]{
+//list[?][nuxt.config.jsにVuetifyの基本色を設定][javascript]{
   vuetify: {
     customVariables: ['~/assets/style/variables.scss'],
     theme: {
