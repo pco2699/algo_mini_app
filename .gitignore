@@ -1,2 +1,4 @@
 algo_mini_app-pdf
 *.pdf
+
+node_modules

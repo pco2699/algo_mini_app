@@ -1,0 +1,30 @@
+{
+  "name": "algo_mini_app",
+  "version": "1.0.0",
+  "description": "これは Re:VIEW Starter で生成された、Re:VIEW 用プロジェクトです。",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pco2699/algo_mini_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pco2699/algo_mini_app/issues"
+  },
+  "homepage": "https://github.com/pco2699/algo_mini_app#readme",
+  "devDependencies": {
+    "textlint": "^11.3.1"
+  },
+  "dependencies": {
+    "textlint-plugin-review": "^0.3.3",
+    "textlint-rule-preset-ja-technical-writing": "^3.1.3"
+  }
+}
